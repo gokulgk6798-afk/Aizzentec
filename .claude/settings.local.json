@@ -5,7 +5,13 @@
       "Bash(npm install:*)",
       "mcp__plugin_playwright_playwright__browser_navigate",
       "mcp__plugin_playwright_playwright__browser_take_screenshot",
-      "Bash(git -C /Users/shashti/Documents/AI_Lab/Aizzentec/Aizzentec checkout -b \"17-jun\" main)"
+      "Bash(git -C /Users/shashti/Documents/AI_Lab/Aizzentec/Aizzentec checkout -b \"17-jun\" main)",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "Bash(python3:*)",
+      "mcp__plugin_playwright_playwright__browser_wait_for",
+      "mcp__figma-remote-mcp__get_design_context",
+      "Bash(curl:*)"
     ]
   }
 }

@@ -1,0 +1,523 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "aizzentec" [ref=e5] [cursor=pointer]:
+        - /url: "#home"
+        - img "aizzentec" [ref=e6]
+      - navigation [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: "#home"
+        - link "Pricing" [ref=e9] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "Projects" [ref=e10] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Articles" [ref=e11] [cursor=pointer]:
+          - /url: "#articles"
+      - link "Book A Call" [ref=e13] [cursor=pointer]:
+        - /url: "#cta"
+        - img [ref=e15]
+        - generic [ref=e17]: Book A Call
+  - main [ref=e18]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: Threat Strategy
+          - generic [ref=e29]: Defense Agents
+          - generic [ref=e30]: Attack Simulation
+          - generic [ref=e31]: Security Intelligence
+          - generic [ref=e32]: Cloud Hardening
+          - generic [ref=e33]: Incident Response
+          - generic [ref=e34]: Threat Strategy
+          - generic [ref=e35]: Defense Agents
+          - generic [ref=e36]: Attack Simulation
+          - generic [ref=e37]: Security Intelligence
+          - generic [ref=e38]: Cloud Hardening
+          - generic [ref=e39]: Incident Response
+        - heading "Secure your future with AI" [level=1] [ref=e40]
+        - paragraph [ref=e41]: Deploy autonomous defense agents and neutralize threats in real time. Fortify your enterprise with Aizzentec today.
+        - link "Build A Defense" [ref=e43] [cursor=pointer]:
+          - /url: "#cta"
+          - img [ref=e45]
+          - generic [ref=e47]: Build A Defense
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]: Threat Strategy
+          - generic [ref=e51]: Defense Agents
+          - generic [ref=e52]: Attack Simulation
+          - generic [ref=e53]: Security Intelligence
+        - generic [ref=e54]:
+          - generic [ref=e55]: UnitedHealthcare
+          - generic [ref=e56]: aetna
+    - generic [ref=e58]:
+      - paragraph [ref=e59]:
+        - generic [ref=e60]: Recover
+        - generic [ref=e61]: from
+        - generic [ref=e62]: breaches
+        - generic [ref=e63]: faster.
+        - generic [ref=e64]: Protect
+        - generic [ref=e65]: critical
+        - generic [ref=e66]: data
+        - generic [ref=e67]: with
+        - generic [ref=e68]: precision.
+        - generic [ref=e69]: Build
+        - generic [ref=e70]: resilience
+        - generic [ref=e71]: into
+        - generic [ref=e72]: every
+        - generic [ref=e73]: layer
+        - generic [ref=e74]: of
+        - generic [ref=e75]: your
+        - generic [ref=e76]: infrastructure.
+        - generic [ref=e77]: Restore
+        - generic [ref=e78]: systems,
+        - generic [ref=e79]: confidence,
+        - generic [ref=e80]: and
+        - generic [ref=e81]: continuity
+        - generic [ref=e82]: in
+        - generic [ref=e83]: the
+        - generic [ref=e84]: shortest
+        - generic [ref=e85]: possible
+        - generic [ref=e86]: time.
+      - paragraph [ref=e87]: Unlock the full potential of autonomous defense workflows. Our infrastructure ensures low latency and high-fidelity detection for every event.
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - img [ref=e91]
+          - generic [ref=e94]:
+            - heading "Threat Shield" [level=3] [ref=e95]
+            - paragraph [ref=e96]: We fortify your perimeter with adaptive defense protocols. Our team ensures every endpoint adheres to strict zero-trust security standards.
+        - generic [ref=e97]:
+          - img [ref=e99]
+          - generic [ref=e102]:
+            - heading "Defense Agents" [level=3] [ref=e103]
+            - paragraph [ref=e104]: Tailored security agents designed for your threat surface. We develop custom detection logic that integrates deeply with your existing stack.
+        - generic [ref=e105]:
+          - img [ref=e107]
+          - generic [ref=e109]:
+            - heading "Cloud Secure" [level=3] [ref=e110]
+            - paragraph [ref=e111]: Infrastructure hardening for high-traffic cloud apps. We ensure your systems remain resilient, monitored, and ready for any attack vector.
+        - generic [ref=e112]:
+          - img [ref=e114]
+          - generic [ref=e117]:
+            - heading "Threat Hunting" [level=3] [ref=e118]
+            - paragraph [ref=e119]: Transform raw telemetry into actionable intelligence. We build the pipelines and detection rules that protect your organization’s future.
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - generic [ref=e124]: 0ms
+          - paragraph [ref=e125]: Average latency for real-time threat detection.
+        - generic [ref=e126]:
+          - generic [ref=e129]: 0x
+          - paragraph [ref=e130]: Increase in incident response speed.
+        - generic [ref=e131]:
+          - generic [ref=e134]: 0%
+          - paragraph [ref=e135]: Uptime for critical defense infrastructure.
+      - generic [ref=e137]:
+        - img [ref=e138]
+        - text: 2 Minutes Watch
+    - generic [ref=e141]:
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - img [ref=e145]
+          - generic [ref=e150]: Case Studies
+        - heading "Proven security solutions" [level=2] [ref=e151]
+        - paragraph [ref=e152]: We partner with industry leaders to deploy bespoke defense agents that neutralize complex threats and drive measurable resilience.
+      - generic [ref=e153]:
+        - generic [ref=e154]:
+          - generic [ref=e155]: Cigna
+          - generic [ref=e156]: //2026
+          - generic [ref=e157]:
+            - heading "Cigna Zero-Trust Health Systems" [level=3] [ref=e158]
+            - paragraph [ref=e159]: Revolutionizing patient data protection through predictive threat analytics and seamless security integration tools.
+          - img [ref=e161]
+        - generic [ref=e163]:
+          - generic [ref=e164]: aetna
+          - generic [ref=e165]: //2026
+          - generic [ref=e166]:
+            - heading "Aetna Secure Data Ecosystem" [level=3] [ref=e167]
+            - paragraph [ref=e168]: We hardened Aetna’s member data infrastructure using autonomous AI to detect breaches and deliver continuous compliance.
+          - img [ref=e170]
+        - generic [ref=e172]:
+          - generic [ref=e173]: Anthem
+          - generic [ref=e174]: //2026
+          - generic [ref=e175]:
+            - heading "Anthem Defense Care Network" [level=3] [ref=e176]
+            - paragraph [ref=e177]: We deployed a custom engine to automate Anthem’s threat response, reducing breach dwell time by eighty-five percent.
+          - img [ref=e179]
+      - link "More Projects" [ref=e182] [cursor=pointer]:
+        - /url: "#projects"
+        - img [ref=e184]
+        - generic [ref=e186]: More Projects
+    - generic [ref=e188]:
+      - generic [ref=e189]:
+        - generic [ref=e191]:
+          - img [ref=e192]
+          - generic [ref=e197]: Our Product
+        - heading "Build defense at scale" [level=2] [ref=e198]
+        - paragraph [ref=e199]: Design, deploy, and manage sophisticated security workflows through an intuitive visual interface. No complex coding\u2014just pure defense.
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - img [ref=e203]
+          - generic [ref=e205]:
+            - text: Threat Trigger
+            - generic [ref=e206]: 1 item
+        - generic [ref=e207]:
+          - img [ref=e209]
+          - generic [ref=e211]:
+            - text: Defense Agent
+            - generic [ref=e212]: 1 item
+        - generic [ref=e213]:
+          - img [ref=e215]
+          - generic [ref=e217]:
+            - text: Scan Agent
+            - generic [ref=e218]: 1 item
+        - generic [ref=e219]:
+          - img [ref=e221]
+          - generic [ref=e223]:
+            - text: Enrich Fields
+            - generic [ref=e224]: 1 item
+        - generic [ref=e225]:
+          - img [ref=e227]
+          - generic [ref=e229]:
+            - text: Send Alert
+            - generic [ref=e230]: 1 item
+        - generic [ref=e231]:
+          - img [ref=e233]
+          - generic [ref=e235]:
+            - text: SOC Notify
+            - generic [ref=e236]: 1 item
+      - generic [ref=e237]:
+        - generic [ref=e238]:
+          - img [ref=e240]
+          - generic [ref=e243]:
+            - heading "Infinite Visual Canvas" [level=3] [ref=e244]
+            - paragraph [ref=e245]: Map out multi-step defense playbooks on a high-precision grid. Drag and drop triggers, logic gates, and actions to craft custom response paths.
+        - generic [ref=e246]:
+          - img [ref=e248]
+          - generic [ref=e251]:
+            - heading "Autonomous Execution" [level=3] [ref=e252]
+            - paragraph [ref=e253]: Run complex response trees without manual intervention. Our engine handles conditional branching and threat containment automatically.
+        - generic [ref=e254]:
+          - img [ref=e256]
+          - generic [ref=e259]:
+            - heading "End-to-End Encryption" [level=3] [ref=e260]
+            - paragraph [ref=e261]: Every node and data transfer is shielded by industrial-grade security. Maintain total control over your organizational data flow.
+        - generic [ref=e262]:
+          - img [ref=e264]
+          - generic [ref=e266]:
+            - heading "Production-Ready Stack" [level=3] [ref=e267]
+            - paragraph [ref=e268]: Connect core security platforms and internal services through secure, ready integrations that scale with your volume.
+    - generic [ref=e270]:
+      - generic [ref=e271]:
+        - generic [ref=e273]:
+          - img [ref=e274]
+          - generic [ref=e279]: Product Statistics
+        - heading "Optimized for performance" [level=2] [ref=e280]
+        - paragraph [ref=e281]: Monitor every threat signal in real-time. Aizzentec provides deep telemetry into detection accuracy, response latency, and coverage efficiency.
+      - generic [ref=e282]:
+        - generic [ref=e283]:
+          - generic [ref=e284]:
+            - generic [ref=e285]: System Load
+            - generic [ref=e286]: 98.7%
+          - paragraph [ref=e292]: Active threat monitoring
+        - generic [ref=e293]:
+          - generic [ref=e294]:
+            - generic [ref=e295]: Core Systems
+            - generic [ref=e296]: 99%
+          - img [ref=e297]:
+            - generic [ref=e300]: "345"
+          - paragraph [ref=e301]: Total scans · 152 active sensors
+        - generic [ref=e302]:
+          - generic [ref=e303]:
+            - generic [ref=e304]: SLA Response
+            - generic [ref=e305]: 99.99%
+          - generic [ref=e307]: 0.00%
+          - paragraph [ref=e308]: Global threat monitoring · 8.4M events analyzed
+        - generic [ref=e309]:
+          - generic [ref=e310]:
+            - generic [ref=e312]: Growth Vector
+            - generic [ref=e314]: 0%
+            - paragraph [ref=e315]: Threats blocked · coverage gains over 30 days. Optimizing detection models for accuracy.
+            - link "Request Demo" [ref=e316] [cursor=pointer]:
+              - /url: "#cta"
+          - img [ref=e317]
+    - generic [ref=e321]:
+      - generic [ref=e323]:
+        - img [ref=e324]
+        - generic [ref=e329]: Our Approach
+      - heading "Built for the long term" [level=2] [ref=e330]
+      - paragraph [ref=e331]: We don't just ship code; we architect resilient defenses. Our approach combines rigorous testing with rapid deployment cycles.
+      - generic [ref=e332]:
+        - generic [ref=e333]:
+          - img [ref=e334]
+          - heading "Prime Logic" [level=4] [ref=e337]
+          - paragraph [ref=e338]: We prioritize high-fidelity detection tuning to ensure your agents deliver consistent results.
+        - generic [ref=e339]:
+          - img [ref=e340]
+          - heading "Total Clarity" [level=4] [ref=e343]
+          - paragraph [ref=e344]: Gain full observability into how every threat is detected, triaged, and neutralized by your defenses.
+        - generic [ref=e345]:
+          - img [ref=e346]
+          - heading "Fast Cycles" [level=4] [ref=e349]
+          - paragraph [ref=e350]: Transition from prototype to production in weeks, not months, with our pre-built frameworks.
+    - generic [ref=e352]:
+      - generic [ref=e353]:
+        - generic [ref=e354]:
+          - generic [ref=e356]:
+            - img [ref=e357]
+            - generic [ref=e362]: Product Features
+          - heading "Engineered for autonomy" [level=2] [ref=e363]
+        - paragraph [ref=e364]: Go beyond simple alert dashboards. Aizzentec provides the underlying architecture to build, test, and scale enterprise-grade defenses.
+      - generic [ref=e365]:
+        - generic [ref=e366]:
+          - generic [ref=e371]:
+            - generic [ref=e372]: Detect
+            - generic [ref=e373]: Analyze
+            - generic [ref=e374]: Contain
+            - generic [ref=e375]: Deploy
+          - generic [ref=e377]:
+            - generic [ref=e378]: Ask your SOC anything...
+            - generic [ref=e379]:
+              - generic [ref=e380]: Tools
+              - generic [ref=e381]: ↵
+        - generic [ref=e382]:
+          - heading "Push your defenses to production with a single click." [level=3] [ref=e383]
+          - paragraph [ref=e384]: Our secure edge infrastructure ensures sub-50ms latency globally. Deploy to any cloud provider or on-premise.
+          - link "Go Live Now" [ref=e385] [cursor=pointer]:
+            - /url: "#cta"
+            - img [ref=e387]
+            - generic [ref=e389]: Go Live Now
+      - generic [ref=e390]:
+        - generic [ref=e392]:
+          - img [ref=e393]
+          - generic [ref=e398]: Integrations
+        - paragraph [ref=e399]:
+          - generic [ref=e400]: Aizzentec
+          - generic [ref=e401]: bridges
+          - generic [ref=e402]: the
+          - generic [ref=e403]: gap
+          - generic [ref=e404]: between
+          - generic [ref=e405]: your
+          - generic [ref=e406]: data
+          - generic [ref=e407]: and
+          - generic [ref=e408]: your
+          - generic [ref=e409]: tools.
+          - generic [ref=e410]: Deploy
+          - generic [ref=e411]: agents
+          - generic [ref=e412]: that
+          - generic [ref=e413]: live
+          - generic [ref=e414]: where
+          - generic [ref=e415]: you
+          - generic [ref=e416]: work,
+          - generic [ref=e417]: from
+          - generic [ref=e418]: Slack
+          - generic [ref=e419]: to
+          - generic [ref=e420]: Splunk
+          - generic [ref=e421]: and
+          - generic [ref=e422]: beyond.
+        - generic [ref=e423]:
+          - generic [ref=e424]: Splunk
+          - generic [ref=e425]: CrowdStrike
+          - generic [ref=e426]: Slack
+          - generic [ref=e427]: Okta
+          - generic [ref=e428]: Datadog
+          - generic [ref=e429]: AWS
+    - generic [ref=e431]:
+      - generic [ref=e432]:
+        - generic [ref=e434]:
+          - img [ref=e435]
+          - generic [ref=e440]: Testimonials
+        - heading "Trusted by the pioneers" [level=2] [ref=e441]
+        - paragraph [ref=e442]: From high-growth startups to enterprise security teams, Aizzentec is the chosen infrastructure for teams defending the next era of data.
+      - generic [ref=e443]:
+        - generic [ref=e444]:
+          - generic [ref=e446]: V
+          - heading "Infrastructure that finally scales" [level=3] [ref=e447]
+          - generic [ref=e448]: Rating
+          - generic [ref=e449]:
+            - img [ref=e451]
+            - img [ref=e454]
+            - img [ref=e457]
+            - img [ref=e460]
+            - img [ref=e463]
+          - generic [ref=e465]: Comment
+          - paragraph [ref=e466]: The reliability of Aizzentec is unmatched. We’ve migrated our entire detection pipeline to their edge nodes with zero downtime for our users.
+          - generic [ref=e467]: Vertex Labs
+        - generic [ref=e468]:
+          - generic [ref=e470]: F
+          - heading "Saved us months of R&D" [level=3] [ref=e471]
+          - generic [ref=e472]: Rating
+          - generic [ref=e473]:
+            - img [ref=e475]
+            - img [ref=e478]
+            - img [ref=e481]
+            - img [ref=e484]
+            - img [ref=e487]
+          - generic [ref=e489]: Comment
+          - paragraph [ref=e490]: Instead of building our own detection logic from scratch, we used Aizzentec. We went from a prototype to a global production launch in weeks.
+          - generic [ref=e491]: FlowState AI
+        - generic [ref=e492]:
+          - generic [ref=e494]: "N"
+          - heading "Precision in every alert" [level=3] [ref=e495]
+          - generic [ref=e496]: Rating
+          - generic [ref=e497]:
+            - img [ref=e499]
+            - img [ref=e502]
+            - img [ref=e505]
+            - img [ref=e508]
+            - img [ref=e511]
+          - generic [ref=e513]: Comment
+          - paragraph [ref=e514]: The observability tools allow us to monitor detection accuracy in real-time. It has become a vital part of our threat evaluation workflow.
+          - generic [ref=e515]: Neural Sync
+        - generic [ref=e516]:
+          - generic [ref=e518]: S
+          - heading "Enterprise-grade by default" [level=3] [ref=e519]
+          - generic [ref=e520]: Rating
+          - generic [ref=e521]:
+            - img [ref=e523]
+            - img [ref=e526]
+            - img [ref=e529]
+            - img [ref=e532]
+            - img [ref=e535]
+          - generic [ref=e537]: Comment
+          - paragraph [ref=e538]: The node-based builder is a game changer for our team. Even our non-technical stakeholders can now help map out complex response playbooks.
+          - generic [ref=e539]: Sentinel Ops
+    - generic [ref=e541]:
+      - generic [ref=e542]:
+        - generic [ref=e544]:
+          - img [ref=e545]
+          - generic [ref=e550]: Articles
+        - heading "Insights on cyber defense" [level=2] [ref=e551]
+        - paragraph [ref=e552]: Deep dives into security architecture, defense automation, and the future of enterprise resilience. Stay ahead of the threat curve.
+      - generic [ref=e553]:
+        - generic [ref=e554]:
+          - generic [ref=e556]:
+            - heading "What It Takes to Turn Security Into a Business Asset" [level=3] [ref=e557]
+            - generic [ref=e558]:
+              - generic [ref=e559]: Apr 29, 2026
+              - generic [ref=e560]: 2 mins read
+          - paragraph [ref=e562]: Buying security tools is easy. Turning them into something that drives real resilience across your business requires structure.
+        - generic [ref=e563]:
+          - generic [ref=e566]:
+            - heading "Why Your Threat Alerts Feel Inconsistent" [level=3] [ref=e567]
+            - generic [ref=e568]:
+              - generic [ref=e569]: Apr 29, 2026
+              - generic [ref=e570]: 3 mins read
+          - generic [ref=e573]:
+            - 'heading "From Alerting to Systems: The Real Shift in Security" [level=3] [ref=e574]'
+            - generic [ref=e575]:
+              - generic [ref=e576]: Apr 29, 2026
+              - generic [ref=e577]: 2 mins read
+      - generic [ref=e578]:
+        - link "View Articles" [ref=e579] [cursor=pointer]:
+          - /url: "#articles"
+          - img [ref=e581]
+          - generic [ref=e583]: View Articles
+        - paragraph [ref=e584]: Access all our articles in one place.
+    - generic [ref=e586]:
+      - generic [ref=e587]:
+        - generic [ref=e589]:
+          - img [ref=e590]
+          - generic [ref=e595]: FAQ
+        - heading "Common inquiries" [level=2] [ref=e596]
+        - paragraph [ref=e597]: Everything you need to know about deploying, scaling, and securing your defense agents with Aizzentec. Can't find an answer?
+        - link "Contact Us" [ref=e599] [cursor=pointer]:
+          - /url: "#cta"
+          - img [ref=e601]
+          - generic [ref=e603]: Contact Us
+      - generic [ref=e604]:
+        - generic [ref=e605]:
+          - button "Overview" [ref=e606] [cursor=pointer]
+          - button "Security" [ref=e607] [cursor=pointer]
+          - button "Protocols" [ref=e608] [cursor=pointer]
+          - button "Licensing" [ref=e609] [cursor=pointer]
+        - generic [ref=e610]:
+          - button "What is the Aizzentec platform?" [ref=e611] [cursor=pointer]:
+            - img [ref=e612]
+            - text: What is the Aizzentec platform?
+            - img [ref=e616]
+          - paragraph [ref=e618]: Aizzentec is a specialized infrastructure for building and deploying custom defense agents. We provide the detection logic and edge nodes required to run autonomous response at enterprise scale.
+        - generic [ref=e619]:
+          - button "Who is this template designed for?" [ref=e620] [cursor=pointer]:
+            - img [ref=e621]
+            - text: Who is this template designed for?
+            - img [ref=e625]
+          - paragraph [ref=e626]: Teams that need production-grade security — from high-growth startups to enterprise healthcare and finance organizations.
+        - generic [ref=e627]:
+          - button "Does Aizzentec provide pre-built agents?" [ref=e628] [cursor=pointer]:
+            - img [ref=e629]
+            - text: Does Aizzentec provide pre-built agents?
+            - img [ref=e633]
+          - paragraph [ref=e634]: Yes. Start from a library of playbook templates or build your own from scratch on the visual canvas.
+        - generic [ref=e635]:
+          - button "How does it differ from a standard SIEM?" [ref=e636] [cursor=pointer]:
+            - img [ref=e637]
+            - text: How does it differ from a standard SIEM?
+            - img [ref=e641]
+          - paragraph [ref=e642]: Agents take real actions across your tools autonomously — they don’t just alert, they execute response playbooks.
+        - generic [ref=e643]:
+          - button "Can I use my own custom domain?" [ref=e644] [cursor=pointer]:
+            - img [ref=e645]
+            - text: Can I use my own custom domain?
+            - img [ref=e649]
+          - paragraph [ref=e650]: Absolutely. Deploy agents on your own domain with full branding control.
+        - generic [ref=e651]:
+          - button "Is there a limit to how many agents I can build?" [ref=e652] [cursor=pointer]:
+            - img [ref=e653]
+            - text: Is there a limit to how many agents I can build?
+            - img [ref=e657]
+          - paragraph [ref=e658]: Limits depend on your plan. Enterprise tiers offer unlimited agents and dedicated edge nodes.
+    - generic [ref=e661]:
+      - generic [ref=e662]:
+        - img [ref=e663]
+        - generic [ref=e668]: Get Started
+      - heading "Get smarter about cyber defense" [level=2] [ref=e669]
+      - paragraph [ref=e670]: Weekly insights on automation, defense workflows, and real builds. No fluff, just what works.
+      - generic [ref=e671]:
+        - textbox "jane@company.com" [ref=e672]
+        - link "Subscribe" [ref=e673] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e675]
+          - generic [ref=e677]: Subscribe
+  - contentinfo [ref=e678]:
+    - generic [ref=e680]:
+      - generic [ref=e681]:
+        - link "aizzentec" [ref=e682] [cursor=pointer]:
+          - /url: "#home"
+          - img "aizzentec" [ref=e683]
+        - generic [ref=e684]:
+          - link "in" [ref=e685] [cursor=pointer]:
+            - /url: "#"
+          - link "X" [ref=e686] [cursor=pointer]:
+            - /url: "#"
+          - link "◎" [ref=e687] [cursor=pointer]:
+            - /url: "#"
+          - link "▶" [ref=e688] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e689]:
+        - heading "Quick Links" [level=4] [ref=e690]
+        - link "Home" [ref=e691] [cursor=pointer]:
+          - /url: "#"
+        - link "Pricing" [ref=e692] [cursor=pointer]:
+          - /url: "#"
+        - link "Projects" [ref=e693] [cursor=pointer]:
+          - /url: "#"
+        - link "Articles" [ref=e694] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e695]:
+        - heading "Company" [level=4] [ref=e696]
+        - link "About Us" [ref=e697] [cursor=pointer]:
+          - /url: "#"
+        - link "Contact Us" [ref=e698] [cursor=pointer]:
+          - /url: "#"
+        - link "Book A Call" [ref=e699] [cursor=pointer]:
+          - /url: "#"
+        - link "More Templates" [ref=e700] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e701]:
+        - heading "Policies" [level=4] [ref=e702]
+        - link "Terms & Conditions" [ref=e703] [cursor=pointer]:
+          - /url: "#"
+        - link "Privacy Policy" [ref=e704] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e705]: aizzentec
+    - generic [ref=e707]:
+      - generic [ref=e708]: ©2026 Aizzentec. All rights reserved.
+      - generic [ref=e709]: Built with the Aizzentec template

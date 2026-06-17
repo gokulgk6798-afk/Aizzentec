@@ -1,0 +1,656 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e7]:
+        - link "armory" [ref=e9] [cursor=pointer]:
+          - /url: ./
+          - generic [ref=e10]:
+            - img [ref=e14]
+            - paragraph [ref=e18]: armory
+        - generic [ref=e23]:
+          - generic [ref=e25]:
+            - paragraph [ref=e27]: Armory 2026
+            - heading "Seamlessly connect your custom data to GPT-4, Claude 3, and Perplexity." [level=3] [ref=e29]:
+              - code [ref=e30]: Seamlessly connect your custom data to GPT-4, Claude 3, and Perplexity.
+          - paragraph [ref=e35]: "2919 Manchaca Rd #102, Austin, TX 78704"
+        - generic [ref=e39]:
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - paragraph [ref=e44]: Quick Links
+              - generic [ref=e45]:
+                - link "Home" [ref=e47] [cursor=pointer]:
+                  - /url: ./
+                  - heading "Home" [level=6] [ref=e49]
+                - link "Pricing" [ref=e54] [cursor=pointer]:
+                  - /url: ./pricing
+                  - heading "Pricing" [level=6] [ref=e56]
+                - link "About" [ref=e61] [cursor=pointer]:
+                  - /url: ./about
+                  - heading "About" [level=6] [ref=e63]
+                - link "Projects" [ref=e68] [cursor=pointer]:
+                  - /url: ./project
+                  - heading "Projects" [level=6] [ref=e70]
+                - link "Articles" [ref=e75] [cursor=pointer]:
+                  - /url: ./articles
+                  - heading "Articles" [level=6] [ref=e77]
+                - link "Contact Us" [ref=e82] [cursor=pointer]:
+                  - /url: ./contact
+                  - heading "Contact Us" [level=6] [ref=e84]
+            - generic [ref=e88]:
+              - paragraph [ref=e90]: OTHER LINKS
+              - generic [ref=e91]:
+                - link "Terms & Conditions" [ref=e93] [cursor=pointer]:
+                  - /url: ./policies/terms-conditions
+                  - heading "Terms & Conditions" [level=6] [ref=e95]
+                - link "Privacy Policies" [ref=e100] [cursor=pointer]:
+                  - /url: ./policies/privacy-policy
+                  - heading "Privacy Policies" [level=6] [ref=e102]
+                - link "Hire via Contra" [ref=e107] [cursor=pointer]:
+                  - /url: https://contra.com/sirdelani/work?r=sirdelani
+                  - heading "Hire via Contra" [level=6] [ref=e109]
+                - link "Book A Call" [ref=e114] [cursor=pointer]:
+                  - /url: https://cal.com/delani-framer/15min-copy?overlayCalendar=true
+                  - heading "Book A Call" [level=6] [ref=e116]
+          - generic [ref=e122]:
+            - img "Golden modern building against a dark night sky" [ref=e125]
+            - generic [ref=e128]:
+              - link [ref=e130] [cursor=pointer]:
+                - /url: https://x.com/sirdelani
+              - link [ref=e133] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/delanipro/
+              - link [ref=e136] [cursor=pointer]:
+                - /url: https://youtube.com
+              - link [ref=e139] [cursor=pointer]:
+                - /url: https://instagram.com/sirdelani
+      - generic [ref=e141]:
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - heading "AI Strategy" [level=4] [ref=e160]
+            - heading "Custom Agents" [level=4] [ref=e162]
+            - heading "Process Automation" [level=4] [ref=e164]
+            - heading "Data Intelligence" [level=4] [ref=e166]
+          - list [ref=e169]:
+            - listitem [ref=e170]
+            - listitem [ref=e173]
+            - listitem [ref=e176]
+            - listitem [ref=e179]
+            - listitem [ref=e182]
+        - generic [ref=e186]:
+          - generic [ref=e187]:
+            - heading "Power your future with AI" [level=1] [ref=e189]
+            - paragraph [ref=e191]: Deploy custom enterprise agents and automate complex workflows. Scale your intelligence with Armory today.
+          - link "Build A Workflow" [ref=e194] [cursor=pointer]:
+            - /url: ./contact
+            - img [ref=e200]
+            - paragraph [ref=e204]: Build A Workflow
+      - generic [ref=e207]:
+        - generic [ref=e208]:
+          - paragraph [ref=e229]:
+            - generic [ref=e230]: Integrate
+            - generic [ref=e231]: with
+            - generic [ref=e232]: the
+            - generic [ref=e233]: world’s
+            - generic [ref=e234]: most
+            - generic [ref=e235]: powerful
+            - generic [ref=e236]: neural
+            - generic [ref=e237]: engines.
+            - generic [ref=e238]: Seamlessly
+            - generic [ref=e239]: connect
+            - generic [ref=e240]: your
+            - generic [ref=e241]: custom
+            - generic [ref=e242]: data
+            - generic [ref=e243]: to
+            - generic [ref=e244]: GPT-4,
+            - generic [ref=e245]: Claude
+            - generic [ref=e246]: 3,
+            - generic [ref=e247]: and
+            - generic [ref=e248]: Perplexity
+            - generic [ref=e249]: for
+            - generic [ref=e250]: unmatched
+            - generic [ref=e251]: precision.
+            - generic [ref=e252]: Build
+            - generic [ref=e253]: agents
+            - generic [ref=e254]: that
+            - generic [ref=e255]: don’t
+            - generic [ref=e256]: just
+            - generic [ref=e257]: process,
+            - generic [ref=e258]: they
+            - generic [ref=e259]: understand.
+          - paragraph [ref=e261]: Unlock the full potential of LLM-native workflows. Our infrastructure ensures low latency and high-fidelity output for every request.
+        - generic [ref=e262]:
+          - generic [ref=e299]:
+            - heading "Secure Guard" [level=6] [ref=e301]
+            - paragraph [ref=e303]:
+              - code [ref=e304]: We fortify your AI deployments with robust security protocols. Our team ensures every model adheres to strict data privacy standards.
+          - generic [ref=e357]:
+            - heading "Agent Build" [level=6] [ref=e359]
+            - paragraph [ref=e361]: Tailored AI agents designed for your specific needs. We develop custom logic and workflows that integrate deeply with your existing tools.
+          - generic [ref=e423]:
+            - heading "Cloud Scale" [level=6] [ref=e425]
+            - paragraph [ref=e427]:
+              - code [ref=e428]: Infrastructure optimization for high-traffic AI apps. We ensure your systems remain fast, responsive, and ready for any level of demand.
+          - generic [ref=e467]:
+            - heading "Data Mining" [level=6] [ref=e469]
+            - paragraph [ref=e471]:
+              - code [ref=e472]: Transform raw information into actionable intelligence. We build the pipelines and vector stores that power your organization’s future.
+        - generic [ref=e476]:
+          - generic [ref=e479]:
+            - paragraph [ref=e486]: STATISTICS
+            - heading "Quantifiable impact across every deployment. We measure success by the speed and scale of your neural ops." [level=5] [ref=e488]
+            - link "View Report" [ref=e491] [cursor=pointer]:
+              - /url: ./about
+              - img [ref=e497]
+              - paragraph [ref=e501]: View Report
+          - generic [ref=e505]:
+            - generic [ref=e510]:
+              - generic [ref=e511]:
+                - paragraph: 0ms
+                - paragraph [ref=e512]: 0ms
+              - paragraph [ref=e514]: Average latency for real-time inference.
+            - generic [ref=e521]:
+              - generic [ref=e522]:
+                - paragraph: 0x
+                - paragraph [ref=e523]: 0x
+              - paragraph [ref=e525]: Increase in manual task processing speed.
+            - generic [ref=e531]:
+              - generic [ref=e532]:
+                - paragraph: 0%
+                - paragraph [ref=e533]: 0%
+              - paragraph [ref=e535]: Uptime for critical agent infrastructure.
+        - generic [ref=e538] [cursor=pointer]:
+          - img [ref=e544]
+          - paragraph [ref=e557]: 2 Minutes Watch
+      - generic [ref=e566]:
+        - generic [ref=e570]:
+          - paragraph [ref=e577]: CASE STUDIES
+          - heading "Proven neural solutions" [level=2] [ref=e579]
+          - paragraph [ref=e581]: We partner with industry leaders to deploy bespoke AI agents that solve complex operational hurdles and drive measurable growth.
+        - generic [ref=e582]:
+          - link "gray concrete illustration //2026 Cigna Smart Health Systems Revolutionizing patient care through predictive analytics and seamless AI-driven diagnostic integration tools." [ref=e583] [cursor=pointer]:
+            - /url: ./project/cigna-smart-health-systems
+            - generic [ref=e586]:
+              - img "gray concrete illustration" [ref=e590]
+              - generic [ref=e593]:
+                - generic [ref=e594]:
+                  - generic [ref=e595]:
+                    - paragraph [ref=e598]: //2026
+                    - heading "Cigna Smart Health Systems" [level=5] [ref=e601]
+                  - paragraph [ref=e606]: Revolutionizing patient care through predictive analytics and seamless AI-driven diagnostic integration tools.
+                - generic [ref=e607]:
+                  - img [ref=e610]
+                  - img [ref=e614]
+          - link "a black and white photo of a couch //2026 Aetna Health Data Ecosystem We automated Aetna’s member data management using secure AI to provide personalized care and clinical insights." [ref=e617] [cursor=pointer]:
+            - /url: ./project/aetna-health-data-ecosystem
+            - generic [ref=e620]:
+              - img "a black and white photo of a couch" [ref=e624]
+              - generic [ref=e627]:
+                - generic [ref=e628]:
+                  - generic [ref=e629]:
+                    - paragraph [ref=e632]: //2026
+                    - heading "Aetna Health Data Ecosystem" [level=5] [ref=e635]
+                  - paragraph [ref=e640]: We automated Aetna’s member data management using secure AI to provide personalized care and clinical insights.
+                - generic [ref=e641]:
+                  - img [ref=e644]
+                  - img [ref=e648]
+          - link "a black and white photo of wavy lines //2026 Anthem Neural Care Network We deployed a custom LLM to automate Anthem’s provider relations, reducing ticket latency by eighty-five percent." [ref=e651] [cursor=pointer]:
+            - /url: ./project/anthem-neural-care-network
+            - generic [ref=e654]:
+              - img "a black and white photo of wavy lines" [ref=e658]
+              - generic [ref=e661]:
+                - generic [ref=e662]:
+                  - generic [ref=e663]:
+                    - paragraph [ref=e666]: //2026
+                    - heading "Anthem Neural Care Network" [level=5] [ref=e669]
+                  - paragraph [ref=e674]: We deployed a custom LLM to automate Anthem’s provider relations, reducing ticket latency by eighty-five percent.
+                - generic [ref=e675]:
+                  - img [ref=e678]
+                  - img [ref=e682]
+        - link "More Projects" [ref=e697] [cursor=pointer]:
+          - /url: ./project
+          - img [ref=e703]
+          - paragraph [ref=e707]: More Projects
+      - generic [ref=e710]:
+        - generic [ref=e712]:
+          - generic [ref=e713]:
+            - paragraph [ref=e720]: OUR PRODUCT
+            - heading "Build logic at scale" [level=2] [ref=e722]
+          - paragraph [ref=e724]: Design, deploy, and manage sophisticated AI workflows through an intuitive visual interface. No complex coding—just pure logic.
+        - generic [ref=e725]:
+          - generic [ref=e730]:
+            - generic [ref=e731]:
+              - generic [ref=e732]:
+                - generic [ref=e733]:
+                  - paragraph [ref=e737] [cursor=pointer]: AI AGENT
+                  - paragraph [ref=e742] [cursor=pointer]: AI CHAT
+                - generic [ref=e744]:
+                  - paragraph [ref=e746]: STACK
+                  - generic [ref=e747]:
+                    - img [ref=e751]
+                    - img [ref=e756]
+                    - img [ref=e761]
+                    - img [ref=e766]
+                    - img [ref=e771]
+                    - img [ref=e776]
+              - generic [ref=e780]:
+                - generic [ref=e781]:
+                  - generic [ref=e782]:
+                    - img [ref=e786]
+                    - img [ref=e791]
+                  - generic [ref=e793]:
+                    - generic [ref=e794]:
+                      - paragraph [ref=e796]: AGENT MODE
+                      - img [ref=e799]
+                    - generic [ref=e801]:
+                      - paragraph [ref=e803]: UNTITLED
+                      - img [ref=e806]
+                - generic [ref=e810]:
+                  - generic [ref=e816]:
+                    - paragraph [ref=e817]: Email Trigger
+                    - paragraph [ref=e818]: (IMAP)
+                  - paragraph [ref=e824]: If
+                  - generic [ref=e830]:
+                    - paragraph [ref=e832]: Edit Fields
+                    - paragraph [ref=e834]: Manual
+                  - generic [ref=e840]:
+                    - paragraph [ref=e842]: AI Agent
+                    - paragraph [ref=e844]: Tools Agent
+                  - paragraph [ref=e851]: Code
+                  - generic [ref=e856]:
+                    - paragraph [ref=e858]: Edit Fields1
+                    - paragraph [ref=e860]: Manual
+                  - generic [ref=e865]:
+                    - paragraph [ref=e867]: Send Email
+                    - paragraph [ref=e869]: Send
+                  - generic [ref=e874]:
+                    - paragraph [ref=e876]: Telegram
+                    - paragraph [ref=e878]: sendAndWait message
+                  - paragraph [ref=e884]: 1 item
+                  - paragraph [ref=e886]: 1 item
+                  - paragraph [ref=e888]: 1 item
+                  - paragraph [ref=e890]: 1 item
+            - img [ref=e894]
+            - img [ref=e899]
+            - generic [ref=e900]:
+              - img [ref=e903]
+              - paragraph [ref=e906]: AUTO
+            - img [ref=e910]
+            - paragraph [ref=e913]: HOST
+            - img [ref=e917]
+            - generic [ref=e919]:
+              - img [ref=e922]
+              - paragraph [ref=e926]: You
+          - generic [ref=e930]:
+            - generic [ref=e934]:
+              - heading "Infinite Visual Canvas" [level=6] [ref=e936]
+              - paragraph [ref=e938]:
+                - code [ref=e939]: Map out multi-step agent behaviors on a high-precision grid. Drag and drop triggers, logic gates, and actions to craft custom paths.
+            - generic [ref=e943]:
+              - heading "Autonomous Execution" [level=6] [ref=e945]
+              - paragraph [ref=e947]: Run complex decision trees without manual intervention. Our engine handles conditional branching and error recovery automatically.
+            - generic [ref=e951]:
+              - heading "End-to-End Encryption" [level=6] [ref=e953]
+              - paragraph [ref=e955]:
+                - code [ref=e956]: Every node and data transfer is shielded by industrial-grade security. Maintain total control over your organizational data flow.
+            - generic [ref=e959]:
+              - heading "Production-Ready Stack" [level=6] [ref=e961]
+              - paragraph [ref=e963]:
+                - code [ref=e964]: Connect core business platforms and internal services through secure, ready integrations that scale with your volume.
+      - generic [ref=e973]:
+        - generic [ref=e975]:
+          - paragraph [ref=e982]: PRODUCT STATISTICS
+          - heading "Optimized for performance" [level=2] [ref=e985]
+          - paragraph [ref=e987]: Monitor every neural pulse in real-time. Armory provides deep telemetry into agent accuracy, server latency, and token efficiency.
+        - generic [ref=e989]:
+          - generic [ref=e990]:
+            - generic [ref=e991]:
+              - generic [ref=e992]:
+                - heading "System Load" [level=6] [ref=e997]
+                - paragraph [ref=e999]: Active neural processing
+              - paragraph [ref=e1002]: 98.7%
+            - generic [ref=e1005]:
+              - generic [ref=e1006]:
+                - generic [ref=e1008]:
+                  - generic [ref=e1011]:
+                    - img [ref=e1012]
+                    - generic [ref=e1019]: 0%
+                  - generic [ref=e1021]:
+                    - img [ref=e1022]
+                    - generic [ref=e1063]: 0%
+                  - generic [ref=e1066]:
+                    - generic [ref=e1067]:
+                      - paragraph: "0"
+                      - paragraph [ref=e1068]: "0"
+                    - paragraph [ref=e1070]: Core Systems
+                - generic [ref=e1072]:
+                  - img [ref=e1073]
+                  - generic [ref=e1080]: 0%
+                - generic [ref=e1082]:
+                  - img [ref=e1083]
+                  - generic [ref=e1146]: 0%
+              - generic [ref=e1148]:
+                - generic [ref=e1149]:
+                  - generic [ref=e1150]:
+                    - paragraph: 0%
+                    - paragraph [ref=e1151]: 0%
+                  - paragraph [ref=e1153]: CACHE
+                - generic [ref=e1154]:
+                  - generic [ref=e1155]:
+                    - paragraph: 0M
+                    - paragraph [ref=e1156]: 0M
+                  - paragraph [ref=e1158]: UPTIME
+          - generic [ref=e1162]:
+            - generic [ref=e1163]:
+              - generic [ref=e1164]:
+                - heading "SLA Response" [level=6] [ref=e1170]
+                - paragraph [ref=e1172]: Global uptime monitoring
+              - paragraph [ref=e1175]: 99.99%
+            - img "purple white and orange light" [ref=e1195]
+          - generic [ref=e1207]:
+            - generic [ref=e1208]:
+              - generic [ref=e1209]:
+                - heading "Token Usage" [level=6] [ref=e1215]
+                - paragraph [ref=e1217]: Monthly volume throughput
+              - paragraph [ref=e1220]: 8.4M
+            - generic [ref=e1225]:
+              - generic [ref=e1226]:
+                - generic [ref=e1229]:
+                  - img [ref=e1230]
+                  - generic [ref=e1247]: 0%
+                - generic [ref=e1252]:
+                  - paragraph: "0"
+                  - paragraph [ref=e1253]: "0"
+              - generic [ref=e1261]:
+                - img [ref=e1262]
+                - generic [ref=e1461]: 0%
+            - generic [ref=e1464]:
+              - generic [ref=e1465]:
+                - generic [ref=e1466]:
+                  - paragraph: "0"
+                  - paragraph [ref=e1467]: "0"
+                - paragraph [ref=e1469]: TOTAL QUERIES
+              - generic [ref=e1470]:
+                - generic [ref=e1471]:
+                  - paragraph: "0"
+                  - paragraph [ref=e1472]: "0"
+                - paragraph [ref=e1474]: Active Nodes
+          - generic [ref=e1478]:
+            - generic [ref=e1479]:
+              - generic [ref=e1480]:
+                - heading "Growth Vector" [level=6] [ref=e1486]
+                - paragraph [ref=e1488]: Efficiency gains over 30 days
+              - paragraph [ref=e1491]: 99.98%
+            - generic [ref=e1492]:
+              - generic [ref=e1494]:
+                - paragraph [ref=e1496]: 82%
+                - paragraph [ref=e1498]: NET GROWTH
+              - generic [ref=e1505]:
+                - paragraph [ref=e1508]: Optimizing neural weights for output.
+                - link "Request Demo" [ref=e1511] [cursor=pointer]:
+                  - /url: ./contact
+                  - img [ref=e1517]
+                  - paragraph [ref=e1521]: Request Demo
+      - generic [ref=e1541]:
+        - generic [ref=e1543]:
+          - paragraph [ref=e1550]: OUR APPROACH
+          - heading "Built for the long term" [level=2] [ref=e1552]
+          - paragraph [ref=e1554]:
+            - code [ref=e1555]: We don't just ship code; we architect neural ecosystems. Our approach combines rigorous testing with rapid deployment cycles.
+        - generic [ref=e1556]:
+          - generic [ref=e1560]:
+            - heading "Prime Logic" [level=6] [ref=e1562]
+            - paragraph [ref=e1564]: We prioritize high-fidelity model alignment to ensure your agents deliver consistent results.
+          - generic [ref=e1568]:
+            - heading "Total Clarity" [level=6] [ref=e1570]
+            - paragraph [ref=e1572]: Gain full observability into how your data is processed, indexed, and retrieved by your AI.
+          - generic [ref=e1576]:
+            - heading "Fast Cycles" [level=6] [ref=e1578]
+            - paragraph [ref=e1580]:
+              - code [ref=e1581]: Transition from prototype to production in weeks, not months, with our pre-built frameworks.
+      - generic [ref=e1591]:
+        - generic [ref=e1592]:
+          - generic [ref=e1594]:
+            - paragraph [ref=e1601]: PRODUCT FEATURES
+            - heading "Engineered for autonomy" [level=2] [ref=e1604]
+            - paragraph [ref=e1606]: Go beyond simple chat interfaces. Armory provides the underlying architecture to build, test, and scale enterprise-grade agents.
+          - generic [ref=e1609]:
+            - generic [ref=e1610]:
+              - paragraph [ref=e1619] [cursor=pointer]: DISCOVERY
+              - paragraph [ref=e1628] [cursor=pointer]: ANALYSIS
+              - paragraph [ref=e1637] [cursor=pointer]: TRAINING
+              - paragraph [ref=e1646] [cursor=pointer]: DEPLOY
+            - generic [ref=e1647]:
+              - generic [ref=e1663]:
+                - img [ref=e1670]
+                - img [ref=e1675]
+                - img [ref=e1680]
+                - img [ref=e1685]
+                - img [ref=e1690]
+              - generic [ref=e1693]:
+                - heading "Identify latent patterns in unstructured data. Our discovery engine crawls through your silos to map internal knowledge graphs." [level=5] [ref=e1695]
+                - generic [ref=e1696]:
+                  - paragraph [ref=e1698]: Locate missing documentation and sync silos.
+                  - generic [ref=e1699]:
+                    - img [ref=e1703]
+                    - paragraph [ref=e1708]: Knowledge Map
+        - generic [ref=e1712]:
+          - paragraph [ref=e1719]: INTEGRATIONS
+          - paragraph [ref=e1721]:
+            - generic [ref=e1722]: Armory
+            - generic [ref=e1723]: bridges
+            - generic [ref=e1724]: the
+            - generic [ref=e1725]: gap
+            - generic [ref=e1726]: between
+            - generic [ref=e1727]: your
+            - generic [ref=e1728]: data
+            - generic [ref=e1729]: and
+            - generic [ref=e1730]: your
+            - generic [ref=e1731]: tools.
+            - generic [ref=e1732]: Deploy
+            - generic [ref=e1733]: agents
+            - generic [ref=e1734]: that
+            - generic [ref=e1735]: live
+            - generic [ref=e1736]: where
+            - generic [ref=e1737]: you
+            - generic [ref=e1738]: work,
+            - generic [ref=e1739]: from
+            - generic [ref=e1740]: Slack
+            - generic [ref=e1741]: to
+            - generic [ref=e1742]: GitHub
+            - generic [ref=e1743]: and
+            - generic [ref=e1744]: beyond.
+      - generic [ref=e1816]:
+        - generic [ref=e1820]:
+          - paragraph [ref=e1826]: Testimonials
+          - heading "Trusted by the pioneers" [level=2] [ref=e1828]
+          - paragraph [ref=e1830]: From high-growth startups to enterprise research labs, Armory is the chosen infrastructure for teams building the next era of AI.
+        - generic [ref=e1831]:
+          - generic [ref=e1833]:
+            - generic [ref=e1839]: Vertex Labs
+            - generic [ref=e1845]:
+              - heading "Infrastructure that finally scales" [level=5] [ref=e1848]
+              - generic [ref=e1849]:
+                - paragraph [ref=e1852]: Rating
+                - generic [ref=e1859]:
+                  - paragraph [ref=e1861]: Comment
+                  - paragraph [ref=e1863]: The reliability of Armory is unmatched. We’ve migrated our entire neural pipeline to their edge nodes with zero downtime for our users.
+          - generic [ref=e1867]:
+            - generic [ref=e1873]: FlowState AI
+            - generic [ref=e1879]:
+              - heading "Saved us months of R&D" [level=5] [ref=e1882]
+              - generic [ref=e1883]:
+                - paragraph [ref=e1886]: Rating
+                - generic [ref=e1893]:
+                  - paragraph [ref=e1895]: Comment
+                  - paragraph [ref=e1897]: Instead of building our own agent logic from scratch, we used Armory. We went from a prototype to a global production launch in weeks.
+          - generic [ref=e1902]:
+            - generic [ref=e1908]: Neural Sync
+            - generic [ref=e1914]:
+              - heading "Precision in every inference" [level=5] [ref=e1917]
+              - generic [ref=e1918]:
+                - paragraph [ref=e1921]: Rating
+                - generic [ref=e1928]:
+                  - paragraph [ref=e1930]: Comment
+                  - paragraph [ref=e1932]: The observability tools allow us to monitor agent accuracy in real-time. It has become a vital part of our model evaluation workflow.
+          - generic [ref=e1936]:
+            - generic [ref=e1942]: Sentinel Ops
+            - generic [ref=e1948]:
+              - heading "Enterprise-grade by default" [level=5] [ref=e1951]
+              - generic [ref=e1952]:
+                - paragraph [ref=e1955]: Rating
+                - generic [ref=e1962]:
+                  - paragraph [ref=e1964]: Comment
+                  - paragraph [ref=e1966]: The node-based builder is a game changer for our team. Even our non-technical stakeholders can now help map out complex agent behaviors.
+        - list [ref=e1972]:
+          - listitem [ref=e1973]
+          - listitem [ref=e1976]
+          - listitem [ref=e1979]
+          - listitem [ref=e1982]
+          - listitem [ref=e1985]
+      - generic [ref=e1998]:
+        - generic [ref=e2002]:
+          - paragraph [ref=e2009]: Articles
+          - heading "Insights on neural logic" [level=2] [ref=e2011]
+          - paragraph [ref=e2013]: Deep dives into AI architecture, agent automation, and the future of enterprise intelligence. Stay ahead of the neural curve.
+        - generic [ref=e2014]:
+          - link "Modern building with peach and teal colors What It Takes to Turn AI Into a Business Asset Apr 29, 2026 2 mins read Using AI tools is easy. Turning them into something that drives real outcomes across your business requires structure." [ref=e2016] [cursor=pointer]:
+            - /url: ./articles/what-it-takes-to-turn-ai-into-a-business-asset
+            - generic [ref=e2019]:
+              - generic [ref=e2021]:
+                - img "Modern building with peach and teal colors" [ref=e2024]
+                - heading "What It Takes to Turn AI Into a Business Asset" [level=5] [ref=e2026]
+              - generic [ref=e2028]:
+                - generic [ref=e2029]:
+                  - paragraph [ref=e2031]: Apr 29, 2026
+                  - paragraph [ref=e2033]: 2 mins read
+                - paragraph [ref=e2036]: Using AI tools is easy. Turning them into something that drives real outcomes across your business requires structure.
+          - generic [ref=e2041]:
+            - generic [ref=e2042]:
+              - link "Modern building with peach and teal colors Apr 29, 2026 3 mins read Why Your AI Outputs Feel Inconsistent" [ref=e2043] [cursor=pointer]:
+                - /url: ./articles/why-your-ai-outputs-feel-inconsistent
+                - generic [ref=e2046]:
+                  - img "Modern building with peach and teal colors" [ref=e2051]
+                  - generic [ref=e2052]:
+                    - generic [ref=e2054]:
+                      - paragraph [ref=e2056]: Apr 29, 2026
+                      - paragraph [ref=e2058]: 3 mins read
+                    - paragraph [ref=e2062]: Why Your AI Outputs Feel Inconsistent
+              - 'link "Modern building with peach and teal colors Apr 29, 2026 2 mins read From Prompting to Systems: The Real Shift in AI" [ref=e2066] [cursor=pointer]':
+                - /url: ./articles/from-prompting-to-systems-the-real-shift-in-ai
+                - generic [ref=e2069]:
+                  - img "Modern building with peach and teal colors" [ref=e2074]
+                  - generic [ref=e2075]:
+                    - generic [ref=e2077]:
+                      - paragraph [ref=e2079]: Apr 29, 2026
+                      - paragraph [ref=e2081]: 2 mins read
+                    - paragraph [ref=e2085]: "From Prompting to Systems: The Real Shift in AI"
+            - generic [ref=e2089]:
+              - paragraph [ref=e2091]: Access all our articles in one place.
+              - link "View Articles" [ref=e2094] [cursor=pointer]:
+                - /url: ./articles
+                - img [ref=e2100]
+                - paragraph [ref=e2104]: View Articles
+      - generic [ref=e2118]:
+        - generic [ref=e2119]:
+          - generic [ref=e2120]:
+            - paragraph [ref=e2126]: FAQ
+            - heading "Common inquiries" [level=2] [ref=e2128]
+          - generic [ref=e2129]:
+            - paragraph [ref=e2131]: Everything you need to know about deploying, scaling, and securing your neural agents with Armory. Can’t find an answer?
+            - link "Contact Us" [ref=e2133] [cursor=pointer]:
+              - /url: ./contact
+              - img [ref=e2139]
+              - paragraph [ref=e2143]: Contact Us
+        - generic [ref=e2147]:
+          - generic [ref=e2148]:
+            - paragraph [ref=e2152]: Overview
+            - paragraph [ref=e2156] [cursor=pointer]: Security
+            - paragraph [ref=e2160] [cursor=pointer]: Protocols
+            - paragraph [ref=e2164] [cursor=pointer]: Licensing
+          - generic [ref=e2166]:
+            - generic [ref=e2168] [cursor=pointer]:
+              - paragraph [ref=e2173]: What is the Armory platform?
+              - paragraph [ref=e2179]: Armory is a specialized infrastructure for building and deploying custom AI agents. We provide the neural logic and edge nodes required to run autonomous workflows at enterprise scale.
+            - paragraph [ref=e2187] [cursor=pointer]: Who is this template designed for?
+            - paragraph [ref=e2198] [cursor=pointer]: Does Armory provide pre-built agents?
+            - paragraph [ref=e2209] [cursor=pointer]: How does it differ from a standard chatbot?
+            - paragraph [ref=e2220] [cursor=pointer]: Can I use my own custom domain?
+            - paragraph [ref=e2231] [cursor=pointer]: Is there a limit to how many agents I can build?
+      - generic [ref=e2258]:
+        - generic [ref=e2259]:
+          - paragraph [ref=e2265]: Get started
+          - heading "Get smarter about AI systems" [level=2] [ref=e2268]
+          - paragraph [ref=e2270]: Weekly insights on automation, AI workflows, and real builds. No fluff, just what works.
+        - generic [ref=e2271]:
+          - textbox [ref=e2274]:
+            - /placeholder: jane@framer.com
+          - button "Subscribe" [ref=e2276]:
+            - generic [ref=e2277]:
+              - img [ref=e2283]
+              - paragraph [ref=e2287]: Subscribe
+      - generic [ref=e2295] [cursor=pointer]:
+        - heading "Buy Armory AI Template" [level=4] [ref=e2299]
+        - generic [ref=e2300]:
+          - paragraph [ref=e2302]: from
+          - paragraph [ref=e2304]: $129
+    - generic [ref=e2307]:
+      - generic [ref=e2309]:
+        - link [ref=e2311] [cursor=pointer]:
+          - /url: ./
+          - img [ref=e2314]
+        - generic [ref=e2316]:
+          - generic [ref=e2317]:
+            - paragraph [ref=e2319]: Quick Links
+            - generic [ref=e2320]:
+              - link "Home" [ref=e2322] [cursor=pointer]:
+                - /url: ./
+                - paragraph [ref=e2325]: Home
+              - link "Pricing" [ref=e2327] [cursor=pointer]:
+                - /url: ./pricing
+                - paragraph [ref=e2330]: Pricing
+              - link "Projects" [ref=e2332] [cursor=pointer]:
+                - /url: ./project
+                - paragraph [ref=e2335]: Projects
+              - link "Articles" [ref=e2337] [cursor=pointer]:
+                - /url: ./articles
+                - paragraph [ref=e2340]: Articles
+          - generic [ref=e2341]:
+            - paragraph [ref=e2343]: Company
+            - generic [ref=e2344]:
+              - link "About Us" [ref=e2346] [cursor=pointer]:
+                - /url: ./about
+                - paragraph [ref=e2349]: About Us
+              - link "Contact Us" [ref=e2351] [cursor=pointer]:
+                - /url: ./contact
+                - paragraph [ref=e2354]: Contact Us
+              - link "Book A Call" [ref=e2356] [cursor=pointer]:
+                - /url: https://cal.com/delani-framer/15min-copy
+                - paragraph [ref=e2359]: Book A Call
+              - link "More Templates" [ref=e2361] [cursor=pointer]:
+                - /url: https://delani-templates.framer.website/
+                - paragraph [ref=e2364]: More Templates
+          - generic [ref=e2365]:
+            - generic [ref=e2366]:
+              - paragraph [ref=e2368]: Policies
+              - generic [ref=e2369]:
+                - link "Terms & Conditions" [ref=e2371] [cursor=pointer]:
+                  - /url: ./policies/terms-conditions
+                  - paragraph [ref=e2374]: Terms & Conditions
+                - link "Privacy Policy" [ref=e2376] [cursor=pointer]:
+                  - /url: ./policies/privacy-policy
+                  - paragraph [ref=e2379]: Privacy Policy
+            - generic [ref=e2380]:
+              - link [ref=e2382] [cursor=pointer]:
+                - /url: https://x.com/sirdelani
+              - link [ref=e2385] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/delanipro/
+              - link [ref=e2388] [cursor=pointer]:
+                - /url: https://youtube.com
+              - link [ref=e2391] [cursor=pointer]:
+                - /url: https://instagram.com/sirdelani
+      - img [ref=e2396]:
+        - paragraph [ref=e2398]: armory
+      - paragraph [ref=e2401]: ©2026 Armory AI. All rights reserved.
+  - generic:
+    - link "Create a free website with Framer, the website builder loved by startups, designers and agencies.":
+      - /url: https://www.framer.com
+      - paragraph [ref=e2408] [cursor=pointer]: Create a free website with Framer, the website builder loved by startups, designers and agencies.
