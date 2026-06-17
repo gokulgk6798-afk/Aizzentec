@@ -1,9 +1,12 @@
 import { useState, useEffect, useRef } from 'react'
-import { motion, useScroll, useTransform, useInView, useMotionValueEvent, animate } from 'framer-motion'
+import { motion, AnimatePresence, useScroll, useTransform, useInView, useMotionValueEvent, animate } from 'framer-motion'
 import { fadeUp, stagger, scaleIn, viewport, EASE } from './motion'
 import logoSvg from './logo_zen_cw.svg'
 import client1 from './assets/client-1.png'
 import client2 from './assets/client-2.png'
+import client3 from './assets/client-3.png'
+import menuLeft from './assets/menu-left.png'
+import menuBuilding from './assets/menu-building.png'
 
 /* ===================== primitives ===================== */
 
@@ -52,6 +55,13 @@ const I = {
   cycle: p => <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" strokeWidth="1.2" {...p}><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8M20 4v4h-4" /><path d="M20 12a8 8 0 0 1-13.7 5.6L4 16M4 20v-4h4" /></svg>,
   q: p => <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.4" {...p}><circle cx="12" cy="12" r="9" /><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 1-1 1.7M12 17h.01" /></svg>,
   lock: p => <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.7" {...p}><rect x="5" y="11" width="14" height="9" rx="1.5" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>,
+  menu: p => <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6" {...p}><path d="M3 8h18M3 16h18" /></svg>,
+  close: p => <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6" {...p}><path d="M6 6l12 12M18 6 6 18" /></svg>,
+  upRight: p => <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.7" {...p}><path d="M7 17 17 7M8 7h9v9" /></svg>,
+  linkedin: p => <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" {...p}><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8h4V24h-4V8Zm7 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.37-3.9-2.38 0-2.74 1.85-2.74 3.77V24h-4V8Z" /></svg>,
+  xicon: p => <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" {...p}><path d="M18.9 2H22l-7.1 8.1L23 22h-6.6l-5.2-6.8L5.3 22H2.2l7.6-8.7L1.5 2h6.7l4.7 6.2L18.9 2Zm-1.2 18h1.8L7.4 3.9H5.5L17.7 20Z" /></svg>,
+  instagram: p => <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.7" {...p}><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>,
+  github: p => <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" {...p}><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" /></svg>,
 }
 
 function Eyebrow({ children, num }) {
@@ -102,10 +112,99 @@ function ScrollReveal({ text, className }) {
   )
 }
 
+/* ===================== MENU OVERLAY ===================== */
+
+function MenuOverlay({ open, onClose }) {
+  useEffect(() => {
+    if (!open) return
+    const onKey = e => { if (e.key === 'Escape') onClose() }
+    document.body.style.overflow = 'hidden'
+    window.addEventListener('keydown', onKey)
+    return () => { document.body.style.overflow = ''; window.removeEventListener('keydown', onKey) }
+  }, [open, onClose])
+
+  const quick = ['Home', 'Pricing', 'About', 'Projects', 'Articles', 'Contact Us']
+  const other = ['Terms & Conditions', 'Privacy Policies', 'Hire via Contra', 'Book A Call']
+  const socials = [<I.linkedin />, <I.xicon />, <I.instagram />, <I.github />]
+
+  const col = (label, items) => (
+    <div className="menu__col">
+      <span className="menu__label">{label}</span>
+      <ul>
+        {items.map(l => (
+          <li key={l}><a href="#" onClick={onClose}><span>{l}</span><I.upRight /></a></li>
+        ))}
+      </ul>
+    </div>
+  )
+
+  return (
+    <AnimatePresence>
+      {open && (
+        <motion.div
+          className="menu" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+          transition={{ duration: 0.35, ease: EASE }}
+        >
+          <motion.button
+            className="menu__close" onClick={onClose} aria-label="Close menu"
+            initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}
+            transition={{ delay: 0.2 }}
+          ><I.close /></motion.button>
+
+          {/* LEFT — dark panel */}
+          <motion.div
+            className="menu__left"
+            initial={{ x: '-4%', opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ opacity: 0 }}
+            transition={{ duration: 0.5, ease: EASE }}
+          >
+            <img className="menu__left-bg" src={menuLeft} alt="" />
+            <div className="menu__left-dots" />
+            <div className="menu__left-inner">
+              <p className="menu__brand">Aizzentec 2026</p>
+              <h3 className="menu__head">Recover from breaches,<br />protect critical data,<br />and build resilience<br />into every layer.</h3>
+            </div>
+            <span className="menu__addr">2919 Manchaca Rd #102, Austin, TX 78704</span>
+          </motion.div>
+
+          {/* RIGHT — links + media */}
+          <div className="menu__right">
+            <motion.div
+              className="menu__links"
+              initial={{ y: 24, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, ease: EASE, delay: 0.08 }}
+            >
+              <div className="menu__dots" />
+              <div className="menu__cols">
+                {col('Quick Links', quick)}
+                {col('Other Links', other)}
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="menu__media"
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              transition={{ duration: 0.6, ease: EASE, delay: 0.14 }}
+            >
+              <img className="menu__media-bg" src={menuBuilding} alt="" />
+              <div className="menu__media-row">
+                <span className="menu__date">Jun 15, 2026</span>
+                <div className="menu__social">
+                  {socials.map((s, i) => <a key={i} href="#" aria-label="social">{s}</a>)}
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  )
+}
+
 /* ===================== NAV ===================== */
 
 function Nav() {
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   useEffect(() => {
     const on = () => setScrolled(window.scrollY > 30)
     window.addEventListener('scroll', on)
@@ -113,21 +212,27 @@ function Nav() {
   }, [])
   const links = ['Home', 'Pricing', 'Projects', 'Articles']
   return (
-    <motion.header
-      className={'nav' + (scrolled ? ' nav--scrolled' : '')}
-      initial={{ y: -24, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: EASE }}
-    >
-      <div className="nav__inner container">
-        <a href="#home" className="brand"><img src={logoSvg} alt="aizzentec" className="brand__logo" /></a>
-        <nav className="nav__links">
-          {links.map(l => <a key={l} href={'#' + l.toLowerCase()}>{l}</a>)}
-        </nav>
-        <div className="nav__right">
-          <motion.a href="#cta" className="btn btn--light" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>Book A Call</motion.a>
+    <>
+      <motion.header
+        className={'nav' + (scrolled ? ' nav--scrolled' : '')}
+        initial={{ y: -24, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: EASE }}
+      >
+        <div className="nav__inner container">
+          <a href="#home" className="brand"><img src={logoSvg} alt="aizzentec" className="brand__logo" /></a>
+          <nav className="nav__links">
+            {links.map(l => <a key={l} href={'#' + l.toLowerCase()}>{l}</a>)}
+          </nav>
+          <div className="nav__right">
+            <motion.a href="#cta" className="btn btn--light" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>Book A Call</motion.a>
+            <button className="nav__menu" onClick={() => setMenuOpen(true)} aria-label="Open menu">
+              <I.menu /><span>Menu</span>
+            </button>
+          </div>
         </div>
-      </div>
-    </motion.header>
+      </motion.header>
+      <MenuOverlay open={menuOpen} onClose={() => setMenuOpen(false)} />
+    </>
   )
 }
 
@@ -138,11 +243,27 @@ function Hero() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
   const bgY = useTransform(scrollYProgress, [0, 1], [0, 110])
   const cats = ['AI Strategy', 'Custom Agents', 'Process Automation', 'Data Intelligence']
+  const logos = [client1, client2, client3]
   return (
     <section className="hero" id="home" ref={ref}>
       <motion.div className="hero__bg" style={{ y: bgY }} />
       <div className="hero__overlay" />
-      <div className="container hero__inner">
+      <div className="hero__inner">
+        <Group className="hero__top" gap={0.09}>
+          <div className="hero__cats">
+            {cats.map(c => <Reveal as="span" key={c}>{c}</Reveal>)}
+          </div>
+          <Reveal className="hero__ticker">
+            <motion.div
+              className="hero__ticker-track"
+              animate={{ x: ['0%', '-50%'] }}
+              transition={{ duration: 16, ease: 'linear', repeat: Infinity }}
+            >
+              {[...logos, ...logos].map((src, i) => <img key={i} src={src} alt="" />)}
+            </motion.div>
+          </Reveal>
+        </Group>
+
         <Group className="hero__left" gap={0.1}>
           <Reveal as="h1" className="hero__title">Secure your<br />cyber with AI</Reveal>
           <Reveal as="p" className="hero__sub">
@@ -153,15 +274,6 @@ function Hero() {
               <span className="btn-assess__ico"><I.lock /></span>
               <span className="btn-assess__label">Get a Assessment</span>
             </motion.a>
-          </Reveal>
-        </Group>
-        <Group className="hero__right" gap={0.09}>
-          <div className="hero__cats">
-            {cats.map(c => <Reveal as="span" key={c}>{c}</Reveal>)}
-          </div>
-          <Reveal className="hero__clients">
-            <img src={client1} alt="UnitedHealthcare" />
-            <img src={client2} alt="aetna" />
           </Reveal>
         </Group>
       </div>
