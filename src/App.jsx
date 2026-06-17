@@ -31,7 +31,7 @@ function Group({ children, className, gap = 0.08, as = 'div', ...rest }) {
   )
 }
 
-function Counter({ to, suffix = '', decimals = 0, prefix = '' }) {
+function Counter({ to, suffix = '', decimals = 0, prefix = '', comma = false }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
   const [val, setVal] = useState(0)
@@ -40,7 +40,8 @@ function Counter({ to, suffix = '', decimals = 0, prefix = '' }) {
     const controls = animate(0, to, { duration: 1.8, ease: EASE, onUpdate: v => setVal(v) })
     return () => controls.stop()
   }, [inView, to])
-  return <span ref={ref}>{prefix}{val.toFixed(decimals)}{suffix}</span>
+  const display = comma ? Math.round(val).toLocaleString('en-US') : val.toFixed(decimals)
+  return <span ref={ref}>{prefix}{display}{suffix}</span>
 }
 
 /* ===================== icons ===================== */
@@ -267,9 +268,9 @@ function Services() {
     [svcData, 'Resilience Engineering', 'Transform incident insights into stronger defenses with continuous improvement strategies that enhance resilience and reduce future risks.'],
   ]
   const stats = [
-    ['12', 'ms', 'Average latency for real-time threat detection.'],
-    ['10', 'x', 'Increase in incident response speed.'],
-    ['99', '%', 'Uptime for critical defense infrastructure.'],
+    ['500', '+', 'Comprehensive Audits Completed.'],
+    ['98', '%', 'Client Retention Achieved'],
+    ['1,500', '+', 'Security Tests Performed'],
   ]
   return (
     <section className="section section--dark" id="services">
@@ -321,7 +322,7 @@ function Services() {
 
 function Cases() {
   const rows = [
-    ['Cigna', '//2026', 'Cigna Zero-Trust Health Systems', 'Revolutionizing patient data protection through predictive threat analytics and seamless security integration tools.'],
+    ['Bairava', '//2026', 'Bairava Error finding system', 'Revolutionizing patient data protection through predictive threat analytics and seamless security integration tools.'],
     ['aetna', '//2026', 'Aetna Secure Data Ecosystem', 'We hardened Aetna\u2019s member data infrastructure using autonomous AI to detect breaches and deliver continuous compliance.'],
     ['Anthem', '//2026', 'Anthem Defense Care Network', 'We deployed a custom engine to automate Anthem\u2019s threat response, reducing breach dwell time by eighty-five percent.'],
   ]
@@ -331,7 +332,8 @@ function Cases() {
         <Group className="section__head">
           <Reveal><SectionLabel light>Case Studies</SectionLabel></Reveal>
           <Reveal as="h2" className="text-section">Proven security solutions</Reveal>
-          <Reveal as="p" className="lead">We partner with industry leaders to deploy bespoke defense agents that neutralize complex threats and drive measurable resilience.</Reveal>
+          <Reveal as="p" className="lead">We partner with industry leaders to deliver bespoke cybersecurity strategies that 
+drive measurable resilience.</Reveal>
         </Group>
         <Group className="cases__list" gap={0.08}>
           {rows.map(([client, year, t, d]) => (
@@ -355,12 +357,12 @@ function Cases() {
 
 function Product() {
   const nodes = [
-    ['Threat Trigger', '14%', '20%'],
-    ['Defense Agent', '40%', '14%'],
-    ['Scan Agent', '64%', '20%'],
+    ['VAPT Automation', '14%', '20%'],
+    ['Deepscanx', '40%', '14%'],
+    ['DeepBreax', '64%', '20%'],
     ['Enrich Fields', '24%', '58%'],
-    ['Send Alert', '52%', '64%'],
-    ['SOC Notify', '76%', '58%'],
+    ['DeepPhish', '52%', '64%'],
+    ['Quick Scan', '76%', '58%'],
   ]
   const feats = [
     [featCube, 'Infinite Visual Canvas', 'Map out multi-step defense playbooks on a high-precision grid. Drag and drop triggers, logic gates, and actions to craft custom response paths.'],
@@ -408,16 +410,154 @@ function Product() {
 
 /* ===================== STATISTICS (dashboard) ===================== */
 
-function Gauge({ value = 345 }) {
+/* card header: bordered icon + title/subtitle + mono value */
+function StatHead({ title, sub, value }) {
   return (
-    <svg className="gauge" width="150" height="100" viewBox="0 0 150 100">
-      <path d="M15 90 A60 60 0 0 1 135 90" fill="none" stroke="rgba(255,255,255,.08)" strokeWidth="4" />
-      <motion.path d="M15 90 A60 60 0 0 1 135 90" fill="none" stroke="url(#g)" strokeWidth="4" strokeLinecap="round"
-        initial={{ pathLength: 0 }} whileInView={{ pathLength: 0.62 }} viewport={{ once: true }}
-        transition={{ duration: 1.3, ease: EASE }} />
-      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#4ade80" /><stop offset="1" stopColor="#22c55e" /></linearGradient></defs>
-      <text x="75" y="78" textAnchor="middle" fill="#fff" fontFamily="var(--font)" fontSize="28" fontWeight="400" letterSpacing="-0.03em">{value}</text>
-    </svg>
+    <div className="stat-head">
+      <div className="stat-head__main">
+        <span className="stat-head__icon"><I.bolt width="16" height="16" /></span>
+        <div className="stat-head__text">
+          <h4>{title}</h4>
+          <p>{sub}</p>
+        </div>
+      </div>
+      {value && <span className="stat-head__val">{value}</span>}
+    </div>
+  )
+}
+
+/* polar point + SVG arc path (0° = top, sweeping clockwise) */
+const polar = (cx, cy, r, deg) => {
+  const a = ((deg - 90) * Math.PI) / 180
+  return [cx + r * Math.cos(a), cy + r * Math.sin(a)]
+}
+const arcPath = (cx, cy, r, a0, a1) => {
+  const [x0, y0] = polar(cx, cy, r, a0)
+  const [x1, y1] = polar(cx, cy, r, a1)
+  const large = a1 - a0 <= 180 ? 0 : 1
+  return `M ${x0} ${y0} A ${r} ${r} 0 ${large} 1 ${x1} ${y1}`
+}
+
+/* dial — filled-arc gauge (white fill + contrast ticks) or 270° speedometer w/ needle */
+function RadialDial({ to = 0.62, ticks = 56, value, label, variant = 'ring' }) {
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true, margin: '-60px' })
+  const [p, setP] = useState(0)
+  useEffect(() => {
+    if (!inView) return
+    const controls = animate(0, to, { duration: 1.4, ease: EASE, onUpdate: setP })
+    return () => controls.stop()
+  }, [inView, to])
+
+  if (variant === 'gauge') {
+    const cx = 100, cy = 116, R = 78, GAP = 180
+    const A0 = 180 + GAP / 2 // 270° (left)
+    const SPAN = 360 - GAP // 180° — top half circle
+    const fillEnd = A0 + SPAN * p
+    const bandTicks = 30, fineTicks = 84
+    return (
+      <div className="dial dial--gauge" ref={ref}>
+        <svg viewBox="0 0 200 200">
+          {/* outer fine graduations */}
+          {Array.from({ length: fineTicks + 1 }, (_, i) => {
+            const ang = A0 + (SPAN * i) / fineTicks
+            const [x1, y1] = polar(cx, cy, R + 13, ang)
+            const [x2, y2] = polar(cx, cy, R + 16, ang)
+            return <line key={'f' + i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(255,255,255,0.28)" strokeWidth="0.7" />
+          })}
+          {/* thick band: dark track + white fill */}
+          <path d={arcPath(cx, cy, R, A0, A0 + SPAN)} fill="none" stroke="rgb(36,36,36)" strokeWidth="18" />
+          {p > 0.002 && <path d={arcPath(cx, cy, R, A0, fillEnd)} fill="none" stroke="#fff" strokeWidth="18" />}
+          {/* band graduation ticks (contrast over fill) */}
+          {Array.from({ length: bandTicks + 1 }, (_, i) => {
+            const ang = A0 + (SPAN * i) / bandTicks
+            const major = i % 5 === 0
+            const [x1, y1] = polar(cx, cy, major ? R - 7 : R + 2, ang)
+            const [x2, y2] = polar(cx, cy, R + 7, ang)
+            const onFill = ang <= fillEnd
+            return (
+              <line
+                key={'b' + i}
+                x1={x1} y1={y1} x2={x2} y2={y2}
+                stroke={onFill ? '#141414' : 'rgba(255,255,255,0.45)'}
+                strokeWidth={major ? 1.5 : 1} strokeLinecap="round"
+                style={{ transition: 'stroke .1s ease' }}
+              />
+            )
+          })}
+        </svg>
+        <div className="dial__center">
+          <span className="dial__val">{value}</span>
+          <span className="dial__glyph">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" strokeWidth="1.6">
+              <path d="M4 17a8 8 0 0 1 16 0" />
+              <path d="M12 17l4.5-4" strokeLinecap="round" />
+              <circle cx="12" cy="17" r="1.6" fill="#fff" stroke="none" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    )
+  }
+
+  // filled-arc gauge: gap at bottom, white fill over a dark track, ticks flip to dark over the fill
+  const cx = 100, cy = 100, R = 70, GAP = 64
+  const A0 = 180 + GAP / 2
+  const SPAN = 360 - GAP
+  const fillEnd = A0 + SPAN * p
+  return (
+    <div className="dial dial--ring" ref={ref}>
+      <svg viewBox="0 0 200 200">
+        <path d={arcPath(cx, cy, R, A0, A0 + SPAN)} fill="none" stroke="rgb(36,36,36)" strokeWidth="22" />
+        {p > 0.002 && (
+          <path d={arcPath(cx, cy, R, A0, fillEnd)} fill="none" stroke="#fff" strokeWidth="22" />
+        )}
+        {Array.from({ length: ticks + 1 }, (_, i) => {
+          const ang = A0 + (SPAN * i) / ticks
+          const major = i % 7 === 0
+          const [x1, y1] = polar(cx, cy, major ? R - 9 : R + 3, ang)
+          const [x2, y2] = polar(cx, cy, R + 9, ang)
+          const onFill = ang <= fillEnd
+          return (
+            <line
+              key={i}
+              x1={x1} y1={y1} x2={x2} y2={y2}
+              stroke={onFill ? '#141414' : 'rgba(255,255,255,0.4)'}
+              strokeWidth={major ? 1.6 : 1} strokeLinecap="round"
+              style={{ transition: 'stroke .1s ease' }}
+            />
+          )
+        })}
+      </svg>
+      <div className="dial__center">
+        <span className="dial__val">{value}</span>
+        {label && <span className="dial__sub">{label}</span>}
+      </div>
+    </div>
+  )
+}
+
+/* stem / lollipop chart — vertical stems grow up from the X axis, one highlighted */
+function StemChart({ tag }) {
+  const data = [38, 64, 30, 78, 52, 88, 46, 70, 34, 60, 44]
+  const hi = 5
+  return (
+    <div className="stem">
+      {data.map((h, i) => (
+        <div className="stem__col" key={i}>
+          <motion.div
+            className={'stem__bar' + (i === hi ? ' stem__bar--hi' : '')}
+            initial={{ height: 0 }}
+            whileInView={{ height: h + '%' }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.1, ease: EASE, delay: i * 0.07 }}
+          >
+            <span className="stem__dot" />
+            {i === hi && tag && <span className="stem__tag">{tag}</span>}
+          </motion.div>
+        </div>
+      ))}
+    </div>
   )
 }
 
@@ -445,32 +585,33 @@ function Statistics() {
         </Group>
         <Group className="stats__grid" gap={0.08}>
           <Reveal className="stat-card" variants={scaleIn}>
-            <div className="stat-card__label"><span>System Load</span><span>98.7%</span></div>
-            <div className="bars">
-              {[98, 86, 72, 90].map((p, i) => (
-                <div className="bar" key={i}><motion.i initial={{ width: 0 }} whileInView={{ width: p + '%' }} viewport={{ once: true }} transition={{ duration: 1, ease: EASE, delay: 0.1 * i }} /></div>
-              ))}
-            </div>
-            <p className="stat-card__cap">Active threat monitoring</p>
+            <StatHead title="Websites Scanned" sub="Total assets analyzed" />
+            <RadialDial variant="ring" to={0.78} value={<Counter to={4500} comma suffix="+" />} label="Scanned" />
           </Reveal>
+
           <Reveal className="stat-card" variants={scaleIn}>
-            <div className="stat-card__label"><span>Core Systems</span><span>99%</span></div>
-            <Gauge value={345} />
-            <p className="stat-card__cap">Total scans &middot; 152 active sensors</p>
+            <StatHead title="Average Scan Time" sub="Full vulnerability report" value="1–3 min" />
+            <StemChart tag={<>1–3<small>min</small></>} />
           </Reveal>
+
           <Reveal className="stat-card" variants={scaleIn}>
-            <div className="stat-card__label"><span>SLA Response</span><span>99.99%</span></div>
-            <div className="stat-card__big"><Counter to={99.99} decimals={2} suffix="%" /></div>
-            <p className="stat-card__cap">Global threat monitoring &middot; 8.4M events analyzed</p>
+            <StatHead title="Client Engagements" sub="Security projects delivered" value="300" />
+            <RadialDial variant="gauge" to={0.72} value={<Counter to={300} />} />
           </Reveal>
-          <Reveal className="stat-wide" variants={scaleIn}>
-            <div className="stat-wide__left">
-              <div className="stat-card__label"><span>Growth Vector</span></div>
-              <div className="stat-card__big"><Counter to={82} suffix="%" /></div>
-              <p className="stat-card__cap">Threats blocked &middot; coverage gains over 30 days. Optimizing detection models for accuracy.</p>
-              <a className="btn-ghost" href="#cta" style={{ marginTop: 18 }}>Request Demo</a>
+
+          <Reveal className="stat-card stat-card--wide" variants={scaleIn}>
+            <StatHead title="Active Clients" sub="Organizations we protect today" />
+            <div className="growth">
+              <div className="growth__left">
+                <div className="stat-card__big"><Counter to={100} suffix="+" /></div>
+                <span className="dial__sub">Active Clients</span>
+              </div>
+              <Spark />
             </div>
-            <Spark />
+            <div className="growth__foot">
+              <p>Trusted by security teams worldwide.</p>
+              <CTAButton href="#cta">Request Demo</CTAButton>
+            </div>
           </Reveal>
         </Group>
       </div>
@@ -482,9 +623,9 @@ function Statistics() {
 
 function Approach() {
   const items = [
-    [I.cube, 'Prime Logic', 'We prioritize high-fidelity detection tuning to ensure your agents deliver consistent results.'],
+    [I.cube, 'Prime Resilience', 'We prioritize high-fidelity detection tuning to ensure your agents deliver consistent results.'],
     [I.eye, 'Total Clarity', 'Gain full observability into how every threat is detected, triaged, and neutralized by your defenses.'],
-    [I.cycle, 'Fast Cycles', 'Transition from prototype to production in weeks, not months, with our pre-built frameworks.'],
+    [I.cycle, 'Fast Recovery Cycles', 'Transition from prototype to production in weeks, not months, with our pre-built frameworks.'],
   ]
   return (
     <section className="approach on-light" id="approach">
