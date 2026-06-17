@@ -150,49 +150,66 @@ ul { list-style: none; }
   position: relative; min-height: 901px;
   display: flex; align-items: flex-end;
   overflow: hidden;
+  background: var(--black);
+}
+/* dark 3-D voxel landscape (Figma video background, captured as image) */
+.hero__bg {
+  position: absolute; inset: -6% 0 0 0; height: 112%;
+  background: url('./assets/hero-bg.png') center/cover no-repeat;
+}
+.hero__overlay {
+  position: absolute; inset: 0;
   background:
-    radial-gradient(120% 90% at 78% 18%, rgba(225,29,42,.55), transparent 55%),
-    radial-gradient(140% 120% at 95% 60%, rgba(120,12,26,.85), transparent 60%),
-    linear-gradient(180deg, #1a0509 0%, #120307 40%, #060606 100%);
-}
-/* dotted 3-D surface texture across the hero floor */
-.hero__grid {
-  position: absolute; inset: 0;
-  background-image: radial-gradient(rgba(255,120,120,.22) 1px, transparent 1.4px);
-  background-size: 16px 16px;
-  -webkit-mask-image: radial-gradient(120% 80% at 85% 95%, #000 0%, transparent 70%);
-  mask-image: radial-gradient(120% 80% at 85% 95%, #000 0%, transparent 70%);
-  transform: perspective(700px) rotateX(58deg) scale(1.6) translateY(28%);
-  transform-origin: bottom center;
-  opacity: .9;
-}
-.hero__vignette {
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(6,6,6,.4) 0%, transparent 30%, transparent 60%, rgba(6,6,6,.85) 100%);
+    linear-gradient(90deg, rgba(6,6,6,.88) 0%, rgba(6,6,6,.55) 32%, rgba(6,6,6,.05) 58%, transparent 75%),
+    linear-gradient(180deg, rgba(6,6,6,.7) 0%, transparent 22%, transparent 52%, rgba(6,6,6,.92) 100%);
 }
 .hero__inner {
   position: relative; z-index: 2; width: 100%;
   display: grid; grid-template-columns: 1.1fr .9fr; align-items: end;
-  padding-top: 110px; padding-bottom: 64px; gap: 40px;
+  padding-top: 110px; padding-bottom: 132px; gap: 40px;
 }
 .hero__title {
-  font-family: var(--font); font-weight: 500;
-  font-size: clamp(46px, 6vw, 84px); line-height: .98; letter-spacing: -.04em;
-  max-width: 9ch;
+  font-family: var(--font); font-weight: 400;
+  font-size: clamp(46px, 6.3vw, 90px); line-height: 1.06; letter-spacing: -.034em;
+  color: var(--white);
 }
-.hero__sub { margin-top: 22px; max-width: 40ch; color: var(--w-65); font-size: 15px; }
-.hero__cta { margin-top: 28px; }
+.hero__sub {
+  margin-top: 24px; max-width: 515px;
+  color: var(--w-85); font-weight: 300; font-size: 14.5px;
+  line-height: 1.86; letter-spacing: .32px;
+}
+.hero__cta { margin-top: 30px; }
+
+/* "Get a Assessment" pill — white pill, dark icon box, centered label */
+.btn-assess {
+  display: inline-flex; align-items: center; gap: 6px;
+  width: 200px; background: var(--white); color: var(--grey-5);
+  border: 1px solid var(--grey-5-6, rgba(13,13,13,.06));
+  padding: 2px 10px 2px 2px; border-radius: 2px;
+  transition: transform .25s ease, background .25s ease;
+}
+.btn-assess:hover { background: var(--mercury); }
+.btn-assess__ico {
+  width: 40px; height: 36px; flex-shrink: 0; border-radius: 2px;
+  background: var(--grey-5); color: var(--white);
+  display: grid; place-items: center;
+}
+.btn-assess__label {
+  flex: 1; text-align: center; font-size: 13.2px; font-weight: 400;
+  letter-spacing: .28px; color: var(--grey-5);
+}
+
 .hero__right {
-  display: flex; flex-direction: column; align-items: flex-end; gap: 26px;
-  align-self: flex-start; padding-top: 8px;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 24px;
+  align-self: flex-start; padding-top: 18px;
 }
-.hero__cats { display: flex; flex-direction: column; gap: 12px; text-align: right; }
+.hero__cats { display: flex; flex-direction: column; gap: 14px; text-align: right; }
 .hero__cats span {
-  font-size: clamp(18px,1.7vw,24px); font-weight: 400; letter-spacing: -.02em;
-  color: var(--w-85);
+  font-size: clamp(22px, 2.3vw, 32px); font-weight: 400; letter-spacing: -.02em;
+  line-height: 1; color: var(--white);
 }
-.hero__clients { display: flex; align-items: center; gap: 26px; opacity: .9; }
-.hero__clients .client { font-weight: 600; font-size: 15px; color: var(--w-65); }
+.hero__clients { display: flex; align-items: center; gap: 22px; margin-top: 8px; }
+.hero__clients img { height: 26px; width: auto; opacity: .92; }
 
 /* ===================== SECTION SHELL ===================== */
 .section { padding: 110px 0; position: relative; }

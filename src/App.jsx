@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, useScroll, useTransform, useInView, useMotionValueEvent, animate } from 'framer-motion'
 import { fadeUp, stagger, scaleIn, viewport, EASE } from './motion'
 import logoSvg from './logo_zen_cw.svg'
+import client1 from './assets/client-1.png'
+import client2 from './assets/client-2.png'
 
 /* ===================== primitives ===================== */
 
@@ -49,6 +51,7 @@ const I = {
   eye: p => <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" strokeWidth="1.2" {...p}><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>,
   cycle: p => <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" strokeWidth="1.2" {...p}><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8M20 4v4h-4" /><path d="M20 12a8 8 0 0 1-13.7 5.6L4 16M4 20v-4h4" /></svg>,
   q: p => <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.4" {...p}><circle cx="12" cy="12" r="9" /><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 1-1 1.7M12 17h.01" /></svg>,
+  lock: p => <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.7" {...p}><rect x="5" y="11" width="14" height="9" rx="1.5" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>,
 }
 
 function Eyebrow({ children, num }) {
@@ -133,21 +136,22 @@ function Nav() {
 function Hero() {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
-  const gridY = useTransform(scrollYProgress, [0, 1], [0, 140])
-  const cats = ['Threat Strategy', 'Defense Agents', 'Attack Simulation', 'Security Intelligence']
+  const bgY = useTransform(scrollYProgress, [0, 1], [0, 110])
+  const cats = ['AI Strategy', 'Custom Agents', 'Process Automation', 'Data Intelligence']
   return (
     <section className="hero" id="home" ref={ref}>
-      <motion.div className="hero__grid" style={{ y: gridY }} />
-      <div className="hero__vignette" />
+      <motion.div className="hero__bg" style={{ y: bgY }} />
+      <div className="hero__overlay" />
       <div className="container hero__inner">
         <Group className="hero__left" gap={0.1}>
-          <Reveal as="h1" className="hero__title">Secure your future with AI</Reveal>
+          <Reveal as="h1" className="hero__title">Secure your<br />cyber with AI</Reveal>
           <Reveal as="p" className="hero__sub">
-            Deploy autonomous defense agents and neutralize threats in real time. Fortify your enterprise with Aizzentec today.
+            Implement enterprise-grade recovery solutions and automate your cyber defences. Scale your security posture with Finstein Cyber today.
           </Reveal>
           <Reveal className="hero__cta">
-            <motion.a href="#cta" className="btn btn--light" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
-              Build A Defense <I.arrow width="16" height="16" />
+            <motion.a href="#cta" className="btn-assess" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+              <span className="btn-assess__ico"><I.lock /></span>
+              <span className="btn-assess__label">Get a Assessment</span>
             </motion.a>
           </Reveal>
         </Group>
@@ -156,8 +160,8 @@ function Hero() {
             {cats.map(c => <Reveal as="span" key={c}>{c}</Reveal>)}
           </div>
           <Reveal className="hero__clients">
-            <span className="client">UnitedHealthcare</span>
-            <span className="client">aetna</span>
+            <img src={client1} alt="UnitedHealthcare" />
+            <img src={client2} alt="aetna" />
           </Reveal>
         </Group>
       </div>
