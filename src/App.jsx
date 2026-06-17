@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, useScroll, useTransform, useInView, useMotionValueEvent, animate } from 'framer-motion'
 import { fadeUp, stagger, scaleIn, viewport, EASE } from './motion'
+import logoSvg from './logo_zen_cw.svg'
 
 /* ===================== primitives ===================== */
 
@@ -115,7 +116,7 @@ function Nav() {
       transition={{ duration: 0.6, ease: EASE }}
     >
       <div className="nav__inner container">
-        <a href="#home" className="brand"><span className="brand__mark"><I.bolt /></span><span className="brand__name">aizzentec</span></a>
+        <a href="#home" className="brand"><img src={logoSvg} alt="aizzentec" className="brand__logo" /></a>
         <nav className="nav__links">
           {links.map(l => <a key={l} href={'#' + l.toLowerCase()}>{l}</a>)}
         </nav>
@@ -619,7 +620,7 @@ function Footer() {
       <div className="container">
         <div className="footer__cols">
           <div className="footer__brand">
-            <a href="#home" className="brand"><span className="brand__mark"><I.bolt width="30" height="30" /></span></a>
+            <a href="#home" className="brand"><img src={logoSvg} alt="aizzentec" className="brand__logo" /></a>
             <div className="footer__social" style={{ marginTop: 24 }}>
               {['in', 'X', '◎', '▶'].map(s => <a href="#" key={s}>{s}</a>)}
             </div>
