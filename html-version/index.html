@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Armory — Power your future with AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="brand">
+        <span class="brand__mark"></span>
+        <span class="brand__name">armory</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary nav__cta">Book A Call</a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="pill reveal" data-reveal>
+          <span class="dot"></span> Enterprise AI Agents, Deployed
+        </div>
+        <h1 class="hero__title reveal" data-reveal data-delay="1">Power your future <br /> with <span class="grad">AI</span></h1>
+        <p class="hero__sub reveal" data-reveal data-delay="2">
+          Deploy custom enterprise agents that think, act, and scale.
+          Seamlessly connect your data to GPT-4, Claude 3, and Perplexity.
+        </p>
+        <div class="hero__actions reveal" data-reveal data-delay="3">
+          <a href="#contact" class="btn btn--primary">Build A Workflow</a>
+          <a href="#product" class="btn btn--ghost">Request Demo</a>
+        </div>
+        <div class="hero__cats reveal" data-reveal data-delay="4">
+          <div class="cat">AI Strategy</div>
+          <div class="cat">Custom Agents</div>
+          <div class="cat">Process Automation</div>
+          <div class="cat">Data Intelligence</div>
+        </div>
+      </div>
+
+      <div class="hero__panel reveal" data-reveal data-delay="5" id="heroPanel">
+        <div class="panel__glow"></div>
+        <div class="panel__bar">
+          <span></span><span></span><span></span>
+          <em>armory · workflow canvas</em>
+        </div>
+        <div class="panel__body">
+          <div class="node node--1">Input<small>data source</small></div>
+          <div class="node node--2">Agent<small>GPT-4 · Claude 3</small></div>
+          <div class="node node--3">Action<small>automate</small></div>
+          <div class="node node--4">Output<small>deploy</small></div>
+          <svg class="wires" viewBox="0 0 600 200" preserveAspectRatio="none">
+            <path d="M120,60 C200,60 200,100 280,100" />
+            <path d="M360,100 C440,100 440,60 510,60" />
+            <path d="M360,100 C440,100 440,150 510,150" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LOGOS (marquee) ===================== -->
+    <section class="logos">
+      <div class="container">
+        <p class="logos__label reveal" data-reveal>Trusted infrastructure for modern AI teams</p>
+        <div class="marquee">
+          <div class="marquee__track">
+            <span>Vertex Labs</span><span>FlowState AI</span><span>Neural Sync</span>
+            <span>Sentinel Ops</span><span>Cigna</span><span>Aetna</span>
+            <span>Vertex Labs</span><span>FlowState AI</span><span>Neural Sync</span>
+            <span>Sentinel Ops</span><span>Cigna</span><span>Aetna</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal>Capabilities</span>
+          <h2 class="reveal" data-reveal data-delay="1">Everything you need to ship AI</h2>
+          <p class="reveal" data-reveal data-delay="2">Security, scale, and custom agents engineered for production from day one.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card reveal" data-reveal>
+            <div class="card__icon">🛡️</div>
+            <h3>Secure Guard</h3>
+            <p>Enterprise security protocols and strict data privacy standards baked into every layer.</p>
+          </article>
+          <article class="card reveal" data-reveal data-delay="1">
+            <div class="card__icon">⚙️</div>
+            <h3>Agent Build</h3>
+            <p>Tailored custom AI agents with deep workflow integration across your stack.</p>
+          </article>
+          <article class="card reveal" data-reveal data-delay="2">
+            <div class="card__icon">☁️</div>
+            <h3>Cloud Scale</h3>
+            <p>Infrastructure optimized for high-traffic, high-throughput applications.</p>
+          </article>
+          <article class="card reveal" data-reveal data-delay="3">
+            <div class="card__icon">📊</div>
+            <h3>Data Mining</h3>
+            <p>Pipeline and vector store development to turn raw data into intelligence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="section stats">
+      <div class="container">
+        <div class="stats__grid reveal" data-reveal>
+          <div class="stat">
+            <strong><span class="count" data-to="0" data-dec="0">0</span></strong>
+            <em>Latency overhead (ms)</em>
+          </div>
+          <div class="stat">
+            <strong><span class="count" data-to="10" data-dec="0">0</span><span class="unit">×</span></strong>
+            <em>Processing speed</em>
+          </div>
+          <div class="stat">
+            <strong><span class="count" data-to="99.99" data-dec="2">0</span><span class="unit">%</span></strong>
+            <em>Uptime SLA</em>
+          </div>
+          <div class="stat stat--video">
+            <a href="#" class="play"><span>▶</span> Watch 2 Minutes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CASE STUDIES ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal>Case Studies</span>
+          <h2 class="reveal" data-reveal data-delay="1">Deployments that move the needle</h2>
+          <p class="reveal" data-reveal data-delay="2">Healthcare leaders trust Armory to run mission-critical AI in production.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="case reveal" data-reveal>
+            <div class="case__media case__media--1"></div>
+            <div class="case__body">
+              <span class="tag">Predictive Analytics</span>
+              <h3>Cigna Smart Health Systems</h3>
+              <p>Predictive analytics agents forecasting member outcomes at scale.</p>
+            </div>
+          </article>
+          <article class="case reveal" data-reveal data-delay="1">
+            <div class="case__media case__media--2"></div>
+            <div class="case__body">
+              <span class="tag">Data Management</span>
+              <h3>Aetna Health Data Ecosystem</h3>
+              <p>Unified member data management across siloed legacy systems.</p>
+            </div>
+          </article>
+          <article class="case reveal" data-reveal data-delay="2">
+            <div class="case__media case__media--3"></div>
+            <div class="case__body">
+              <span class="tag">Automation</span>
+              <h3>Anthem Neural Care Network</h3>
+              <p>Provider relations automation cutting response time by 82%.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCT ===================== -->
+    <section class="section product" id="product">
+      <div class="container product__inner">
+        <div class="product__copy">
+          <span class="eyebrow reveal" data-reveal>The Platform</span>
+          <h2 class="reveal" data-reveal data-delay="1">A visual canvas for building AI workflows</h2>
+          <p class="reveal" data-reveal data-delay="2">Map agent behavior on an infinite canvas, then ship to production with one click.</p>
+          <ul class="ticks">
+            <li class="reveal" data-reveal data-delay="1">Infinite Visual Canvas</li>
+            <li class="reveal" data-reveal data-delay="2">Autonomous Execution</li>
+            <li class="reveal" data-reveal data-delay="3">End-to-End Encryption</li>
+            <li class="reveal" data-reveal data-delay="4">Production-Ready Stack</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary reveal" data-reveal data-delay="5">Explore the Builder</a>
+        </div>
+        <div class="product__visual reveal" data-reveal data-delay="2">
+          <div class="metric">
+            <div class="metric__row"><span>System Load</span><b>98.7%</b></div>
+            <div class="bar"><i data-bar="98"></i></div>
+            <div class="metric__row"><span>SLA Response</span><b>99.99%</b></div>
+            <div class="bar"><i data-bar="99"></i></div>
+            <div class="metric__row"><span>Token Usage</span><b>8.4M / mo</b></div>
+            <div class="bar"><i data-bar="74"></i></div>
+            <div class="metric__row"><span>Net Efficiency</span><b>+82%</b></div>
+            <div class="bar"><i data-bar="82"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== METHODOLOGY ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal>Methodology</span>
+          <h2 class="reveal" data-reveal data-delay="1">Built for the long term</h2>
+          <p class="reveal" data-reveal data-delay="2">Rigorously tested systems, not fragile prompts.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card card--tall reveal" data-reveal>
+            <h3>Prime Logic</h3>
+            <p>Model alignment tuned to your domain so outputs stay on-target.</p>
+          </article>
+          <article class="card card--tall reveal" data-reveal data-delay="1">
+            <h3>Total Clarity</h3>
+            <p>Full data observability — trace every decision an agent makes.</p>
+          </article>
+          <article class="card card--tall reveal" data-reveal data-delay="2">
+            <h3>Fast Cycles</h3>
+            <p>Rapid deployment loops that move from idea to production in days.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INTEGRATIONS ===================== -->
+    <section class="section integrations">
+      <div class="container section__head">
+        <span class="eyebrow reveal" data-reveal>Integrations</span>
+        <h2 class="reveal" data-reveal data-delay="1">Bridge your data and tools</h2>
+        <p class="reveal" data-reveal data-delay="2">Connect across the platforms your team already lives in.</p>
+        <div class="logos__row reveal" data-reveal data-delay="3">
+          <span>Slack</span><span>GitHub</span><span>Notion</span>
+          <span>Linear</span><span>Salesforce</span><span>Zapier</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal>Testimonials</span>
+          <h2 class="reveal" data-reveal data-delay="1">Loved by AI teams</h2>
+        </div>
+        <div class="grid grid--2">
+          <blockquote class="quote reveal" data-reveal>
+            <p>"Armory's agents have been rock solid — reliability we've never had before."</p>
+            <footer><strong>Vertex Labs</strong><span>Head of Engineering</span></footer>
+          </blockquote>
+          <blockquote class="quote reveal" data-reveal data-delay="1">
+            <p>"We shipped in a fraction of the time. Development speed is unreal."</p>
+            <footer><strong>FlowState AI</strong><span>CTO</span></footer>
+          </blockquote>
+          <blockquote class="quote reveal" data-reveal data-delay="1">
+            <p>"Observability that finally makes AI explainable to the whole org."</p>
+            <footer><strong>Neural Sync</strong><span>VP Product</span></footer>
+          </blockquote>
+          <blockquote class="quote reveal" data-reveal data-delay="2">
+            <p>"The easiest platform we've used. Non-technical stakeholders get it instantly."</p>
+            <footer><strong>Sentinel Ops</strong><span>Operations Lead</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ARTICLES ===================== -->
+    <section class="section" id="articles">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal>Articles</span>
+          <h2 class="reveal" data-reveal data-delay="1">From the Armory blog</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="post reveal" data-reveal>
+            <div class="post__media post__media--1"></div>
+            <div class="post__meta">Apr 29, 2026 · 2 min read</div>
+            <h3>What It Takes to Turn AI Into a Business Asset</h3>
+          </article>
+          <article class="post reveal" data-reveal data-delay="1">
+            <div class="post__media post__media--2"></div>
+            <div class="post__meta">Apr 29, 2026 · 3 min read</div>
+            <h3>Why Your AI Outputs Feel Inconsistent</h3>
+          </article>
+          <article class="post reveal" data-reveal data-delay="2">
+            <div class="post__media post__media--3"></div>
+            <div class="post__meta">Apr 29, 2026 · 2 min read</div>
+            <h3>From Prompting to Systems: The Real Shift in AI</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-reveal>FAQ</span>
+          <h2 class="reveal" data-reveal data-delay="1">Questions, answered</h2>
+        </div>
+        <div class="faq__list">
+          <div class="faq__item reveal open" data-reveal>
+            <button class="faq__q">What is Armory?<span class="chev">+</span></button>
+            <div class="faq__a"><p>Armory is a platform for building and deploying custom enterprise AI agents connected to your own data.</p></div>
+          </div>
+          <div class="faq__item reveal" data-reveal>
+            <button class="faq__q">Who is it for?<span class="chev">+</span></button>
+            <div class="faq__a"><p>Teams that need production-grade AI — from startups to enterprise healthcare and finance.</p></div>
+          </div>
+          <div class="faq__item reveal" data-reveal>
+            <button class="faq__q">Are there pre-built agents?<span class="chev">+</span></button>
+            <div class="faq__a"><p>Yes. Start from templates or build your own on the visual canvas.</p></div>
+          </div>
+          <div class="faq__item reveal" data-reveal>
+            <button class="faq__q">How is this different from a chatbot?<span class="chev">+</span></button>
+            <div class="faq__a"><p>Agents take actions across your tools autonomously — they don't just chat.</p></div>
+          </div>
+          <div class="faq__item reveal" data-reveal>
+            <button class="faq__q">Can I use a custom domain?<span class="chev">+</span></button>
+            <div class="faq__a"><p>Absolutely. Deploy agents on your own domain with full branding control.</p></div>
+          </div>
+          <div class="faq__item reveal" data-reveal>
+            <button class="faq__q">Is there an agent limit?<span class="chev">+</span></button>
+            <div class="faq__a"><p>Limits depend on your plan. Enterprise tiers offer unlimited agents.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NEWSLETTER / CTA ===================== -->
+    <section class="section cta" id="pricing">
+      <div class="container cta__inner reveal" data-reveal>
+        <div class="cta__glow"></div>
+        <span class="eyebrow">Newsletter</span>
+        <h2>Get smarter about AI systems</h2>
+        <p>Weekly insights on building agents that actually ship. Plus, the Armory AI Template from $129.</p>
+        <form class="cta__form" onsubmit="return false">
+          <input type="email" placeholder="you@company.com" />
+          <button class="btn btn--primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="brand">
+          <span class="brand__mark"></span>
+          <span class="brand__name">armory</span>
+        </a>
+        <p>Power your future with AI.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#projects">Projects</a>
+        <a href="#articles">Articles</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#">Book A Call</a>
+        <a href="#">Templates</a>
+      </div>
+      <div class="footer__col">
+        <h4>Policies</h4>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>©2026 Armory AI. All rights reserved.</span>
+      <span>Built with the Armory template</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
