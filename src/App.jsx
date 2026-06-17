@@ -240,7 +240,7 @@ function Hero() {
             Deploy autonomous defense agents and neutralize threats in real time. Fortify your enterprise with Aizzentec today.
           </Reveal>
           <Reveal className="hero__cta">
-            <CTAButton href="#cta">Build A Defense</CTAButton>
+            <CTAButton href="#cta">Get a assessment</CTAButton>
           </Reveal>
         </Group>
         <Group className="hero__right" gap={0.09}>
@@ -261,10 +261,10 @@ function Hero() {
 
 function Services() {
   const cards = [
-    [svcShield, 'Threat Shield', 'We fortify your perimeter with adaptive defense protocols. Our team ensures every endpoint adheres to strict zero-trust security standards.'],
-    [svcAgent, 'Defense Agents', 'Tailored security agents designed for your threat surface. We develop custom detection logic that integrates deeply with your existing stack.'],
-    [svcCloud, 'Cloud Secure', 'Infrastructure hardening for high-traffic cloud apps. We ensure your systems remain resilient, monitored, and ready for any attack vector.'],
-    [svcData, 'Threat Hunting', 'Transform raw telemetry into actionable intelligence. We build the pipelines and detection rules that protect your organization\u2019s future.'],
+    [svcShield, 'Disaster Recovery', 'We build resilient recovery frameworks that safeguard operations, reduce downtime, and enable rapid restoration of critical business systems.'],
+    [svcAgent, 'Business Continuity', 'Keep critical operations running with proactive continuity strategies that minimize disruption and strengthen organizational resilience.'],
+    [svcCloud, 'Data Protection', 'Secure and scalable backup solutions that safeguard critical data, ensure rapid restoration, and keep business operations running without interruption.'],
+    [svcData, 'Resilience Engineering', 'Transform incident insights into stronger defenses with continuous improvement strategies that enhance resilience and reduce future risks.'],
   ]
   const stats = [
     ['12', 'ms', 'Average latency for real-time threat detection.'],
